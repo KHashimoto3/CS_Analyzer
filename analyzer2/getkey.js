@@ -175,10 +175,12 @@ try {
   const keyDatas1 = getkeyDatas(values1);
   printKeyDatas(keyDatas1, 0);
   console.log("\n");
+
   console.log("2回目の入力");
   const keyDatas2 = getkeyDatas(values2);
   printKeyDatas(keyDatas2, timeStampStartValues2);
   console.log("\n");
+
   console.log("3回目の入力");
   const keyDatas3 = getkeyDatas(values3);
   printKeyDatas(keyDatas3, timeStampStartValues3);
