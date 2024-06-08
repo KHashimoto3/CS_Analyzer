@@ -12,6 +12,7 @@ if (!fileName) {
 const printValue = (values) => {
   values.map((value) => {
     const keyData = getkeyData(value);
+    //inputおよびremovedのそれぞれの文字を''で囲み、カンマ区切りに整形
     const inputText = keyData.input.map((t) => `'${t}'`).join(", ");
     const removedText = keyData.removed.map((t) => `'${t}'`).join(", ");
     console.log(
@@ -56,7 +57,7 @@ const countRemovedSize = (removed) => {
 };
 
 //３回分の記録（values）を３つに分ける
-const divideValue3 = (values) => {
+const splitValuesInto3 = (values) => {
   let valueIdx = 0;
 
   //最後のvalueは分析に使わないので削除
@@ -70,6 +71,7 @@ const divideValue3 = (values) => {
     }
     valueIdx++;
   }
+  //valuesの最初からvalues1の終了位置までをvalues1に格納
   const values1 = values.slice(0, valueIdx);
 
   const values2StartIdx = valueIdx + 3;
@@ -83,10 +85,11 @@ const divideValue3 = (values) => {
     }
     valueIdx++;
   }
+  //values2の開始位置からvalues2の終了位置までをvalues2に格納
   const values2 = values.slice(values2StartIdx, valueIdx);
 
   const values3StartIdx = valueIdx + 3;
-  //３つ目（最後までをvalues3に格納）
+  //３つ目（valuesの最後までをvalues3に格納）
   const values3 = values.slice(values3StartIdx);
 
   if (values1.length === 0 || values2.length === 0 || values3.length === 0) {
@@ -149,10 +152,10 @@ try {
   const obj = JSON.parse(jsonString);
   console.log("読み込んだファイルの内容: ", obj.header);
   //３回分のvaluesを３つの配列に分ける
-  const dividedValues = divideValue3(obj.value);
-  const values1 = dividedValues.values1;
-  const values2 = dividedValues.values2;
-  const values3 = dividedValues.values3;
+  const splitedValues = splitValuesInto3(obj.value);
+  const values1 = splitedValues.values1;
+  const values2 = splitedValues.values2;
+  const values3 = splitedValues.values3;
 
   console.log("1回目の入力");
   printValue(values1);
