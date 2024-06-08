@@ -78,9 +78,10 @@ const splitValuesInto3 = (values) => {
   //valuesの最初からvalues1の終了位置までをvalues1に格納
   const values1 = values.slice(0, valueIdx);
 
+  /***２つ目の処理ここから=======================***/
   const values2StartIdx = valueIdx + 3;
   valueIdx = values2StartIdx;
-
+  //２つ目の開始位置のtimestampを取得
   const timeStampStartValues2 = values[valueIdx].timestamp;
 
   //２つ目の終了を探す
@@ -94,7 +95,9 @@ const splitValuesInto3 = (values) => {
   //values2の開始位置からvalues2の終了位置までをvalues2に格納
   const values2 = values.slice(values2StartIdx, valueIdx);
 
+  /***３つ目の処理ここから=======================***/
   const values3StartIdx = valueIdx + 3;
+  //３つ目の開始位置のtimestampを取得
   const timeStampStartValues3 = values[values3StartIdx].timestamp;
   //３つ目（valuesの最後までをvalues3に格納）
   const values3 = values.slice(values3StartIdx);
