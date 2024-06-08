@@ -8,7 +8,7 @@ if (!fileName) {
   process.exit(1);
 }
 
-//１回分のvaluesを解析して出力
+//１回分のvaluesを出力
 const printKeyDatas = (keyDatas, startTime) => {
   keyDatas.map((keyData) => {
     const timestamp = keyData.timestamp - startTime;
