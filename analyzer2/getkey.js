@@ -8,10 +8,8 @@ if (!fileName) {
   process.exit(1);
 }
 
+//１回分のvaluesを解析して出力
 const printValue = (values) => {
-  console.log("読み込んだファイルの内容: ");
-  //最後のvalueは分析に使わないので削除
-  values.pop();
   values.map((value) => {
     const keyData = getkeyData(value);
     const inputText = keyData.input.map((t) => `'${t}'`).join(", ");
@@ -57,13 +55,113 @@ const countRemovedSize = (removed) => {
   return size;
 };
 
+//３回分の記録（values）を３つに分ける
+const divideValue3 = (values) => {
+  let valueIdx = 0;
+
+  //最初のvalueは分析に使わないので削除
+  values.shift();
+  //最後のvalueは分析に使わないので削除
+  values.pop();
+
+  //１つ目の終了を探す
+  while (valueIdx < values.length) {
+    //１回分の終わりかどうか
+    if (isTerminalPoint(valueIdx, values)) {
+      break;
+    }
+    valueIdx++;
+  }
+  const values1 = values.slice(0, valueIdx);
+
+  const values2StartIdx = valueIdx + 4;
+  valueIdx = values2StartIdx;
+
+  //２つ目の終了を探す
+  while (valueIdx < values.length) {
+    //１回分の終わりかどうか
+    if (isTerminalPoint(valueIdx, values)) {
+      break;
+    }
+    valueIdx++;
+  }
+  const values2 = values.slice(values2StartIdx, valueIdx);
+
+  const values3StartIdx = valueIdx + 4;
+  //３つ目（最後までをvalues3に格納）
+  const values3 = values.slice(values3StartIdx);
+
+  if (values1.length === 0 || values2.length === 0 || values3.length === 0) {
+    console.log("valuesの分割に失敗しました。データを確認してください。");
+    process.exit(1);
+  }
+
+  const dividedValues = {
+    values1: values1,
+    values2: values2,
+    values3: values3,
+  };
+
+  return dividedValues;
+};
+
+//各回の終了場所かどうか　TODO: 時間がある時にもっとスマートに書き直す
+const isTerminalPoint = (valueIdx, values) => {
+  if (
+    values[valueIdx].changeData.text.length === 2 &&
+    values[valueIdx].changeData.text[0] === "" &&
+    values[valueIdx].changeData.text[1] === ""
+  ) {
+    if (
+      values[valueIdx + 1].changeData.text.length === 2 &&
+      values[valueIdx + 1].changeData.text[0] === "" &&
+      values[valueIdx + 1].changeData.text[1] === ""
+    ) {
+      if (
+        values[valueIdx + 2].changeData.text.length === 2 &&
+        values[valueIdx + 2].changeData.text[0] === "" &&
+        values[valueIdx + 2].changeData.text[1] === ""
+      ) {
+        if (
+          values[valueIdx + 3].changeData.text.length === 2 &&
+          values[valueIdx + 3].changeData.text[0] === "" &&
+          values[valueIdx + 3].changeData.text[1] === ""
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+};
+
 //ファイルを読み込む（同期）
 try {
   console.log("読み込んだファイル名: ", fileName);
   const jsonString = fs.readFileSync("record-files/" + fileName, "utf8");
   const obj = JSON.parse(jsonString);
   console.log("読み込んだファイルの内容: ", obj.header);
-  printValue(obj.value);
+  //３回分のvaluesを３つに分ける
+  const dividedValues = divideValue3(obj.value);
+  const values1 = dividedValues.values1;
+  const values2 = dividedValues.values2;
+  const values3 = dividedValues.values3;
+
+  console.log("1回目の入力");
+  printValue(values1);
+  console.log("\n");
+  console.log("2回目の入力");
+  printValue(values2);
+  console.log("\n");
+  console.log("3回目の入力");
+  printValue(values3);
 } catch (error) {
   console.log("エラーが発生しました: ", error);
 }
