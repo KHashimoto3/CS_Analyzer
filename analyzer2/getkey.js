@@ -1,8 +1,12 @@
-console.log("hello from getkey.js");
-
 const fs = require("fs");
 
-const fileName = "A01_sample_video.json";
+// ファイル名をプログラム引数として取得
+const fileName = process.argv[2];
+
+if (!fileName) {
+  console.log("ファイル名を指定してください");
+  process.exit(1);
+}
 
 const printValue = (values) => {
   console.log("読み込んだファイルの内容: ");
@@ -55,6 +59,7 @@ const countRemovedSize = (removed) => {
 
 //ファイルを読み込む（同期）
 try {
+  console.log("読み込んだファイル名: ", fileName);
   const jsonString = fs.readFileSync("record-files/" + fileName, "utf8");
   const obj = JSON.parse(jsonString);
   console.log("読み込んだファイルの内容: ", obj.header);
