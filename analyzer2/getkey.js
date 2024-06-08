@@ -59,8 +59,6 @@ const countRemovedSize = (removed) => {
 const divideValue3 = (values) => {
   let valueIdx = 0;
 
-  //最初のvalueは分析に使わないので削除
-  values.shift();
   //最後のvalueは分析に使わないので削除
   values.pop();
 
@@ -74,7 +72,7 @@ const divideValue3 = (values) => {
   }
   const values1 = values.slice(0, valueIdx);
 
-  const values2StartIdx = valueIdx + 4;
+  const values2StartIdx = valueIdx + 3;
   valueIdx = values2StartIdx;
 
   //２つ目の終了を探す
@@ -87,7 +85,7 @@ const divideValue3 = (values) => {
   }
   const values2 = values.slice(values2StartIdx, valueIdx);
 
-  const values3StartIdx = valueIdx + 4;
+  const values3StartIdx = valueIdx + 3;
   //３つ目（最後までをvalues3に格納）
   const values3 = values.slice(values3StartIdx);
 
@@ -144,11 +142,13 @@ const isTerminalPoint = (valueIdx, values) => {
 
 //ファイルを読み込む（同期）
 try {
-  console.log("読み込んだファイル名: ", fileName);
+  console.log("読み込むファイル名: ", fileName);
+  //ファイルを読み込む
   const jsonString = fs.readFileSync("record-files/" + fileName, "utf8");
+  //JSON形式に変換
   const obj = JSON.parse(jsonString);
   console.log("読み込んだファイルの内容: ", obj.header);
-  //３回分のvaluesを３つに分ける
+  //３回分のvaluesを３つの配列に分ける
   const dividedValues = divideValue3(obj.value);
   const values1 = dividedValues.values1;
   const values2 = dividedValues.values2;
