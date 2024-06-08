@@ -162,7 +162,7 @@ try {
   const jsonString = fs.readFileSync("record-files/" + fileName, "utf8");
   //JSON形式に変換
   const obj = JSON.parse(jsonString);
-  console.log("読み込んだファイルの内容: ", obj.header);
+  console.log("読み込んだファイルのヘッダー: ", obj.header);
   //３回分のvaluesを３つの配列に分ける
   const splitedValues = splitValuesInto3(obj.value);
   const values1 = splitedValues.values1;
@@ -170,6 +170,8 @@ try {
   const values3 = splitedValues.values3;
   const timeStampStartValues2 = splitedValues.timeStampStartValues2;
   const timeStampStartValues3 = splitedValues.timeStampStartValues3;
+
+  console.log("\n読み込んだファイルのvalue: \n");
 
   console.log("1回目の入力");
   const keyDatas1 = getkeyDatas(values1);
