@@ -9,33 +9,37 @@ if (!fileName) {
 }
 
 //１回分のvaluesを解析して出力
-const printValue = (values) => {
-  values.map((value) => {
-    const keyData = getkeyData(value);
+const printKeyDatas = (keyDatas, startTime) => {
+  keyDatas.map((keyData) => {
+    const timestamp = keyData.timestamp - startTime;
     //inputおよびremovedのそれぞれの文字を''で囲み、カンマ区切りに整形
     const inputText = keyData.input.map((t) => `'${t}'`).join(", ");
     const removedText = keyData.removed.map((t) => `'${t}'`).join(", ");
     console.log(
-      ` ${keyData.timestamp}\t\t${keyData.inputSize}\t${inputText}\t\t\t${keyData.removedSize}\t${removedText}`
+      ` ${timestamp}\t\t${keyData.inputSize}\t${inputText}\t\t\t${keyData.removedSize}\t${removedText}`
     );
   });
 };
 
 //valueの中身を取り出す
-const getkeyData = (valueObj) => {
-  const timestamp = valueObj.timestamp;
-  const input = valueObj.changeData.text;
-  const inputSize = countInputSize(input);
-  const removed = valueObj.changeData.removed;
-  const removedSize = countRemovedSize(removed);
-  const keyData = {
-    timestamp: timestamp,
-    input: input,
-    inputSize: inputSize,
-    removed: removed,
-    removedSize: removedSize,
-  };
-  return keyData;
+const getkeyDatas = (values) => {
+  let keyDatas = [];
+  values.map((value) => {
+    const timestamp = value.timestamp;
+    const input = value.changeData.text;
+    const inputSize = countInputSize(input);
+    const removed = value.changeData.removed;
+    const removedSize = countRemovedSize(removed);
+    const keyData = {
+      timestamp: timestamp,
+      input: input,
+      inputSize: inputSize,
+      removed: removed,
+      removedSize: removedSize,
+    };
+    keyDatas.push(keyData);
+  });
+  return keyDatas;
 };
 
 //入力文字数のカウント
@@ -77,6 +81,8 @@ const splitValuesInto3 = (values) => {
   const values2StartIdx = valueIdx + 3;
   valueIdx = values2StartIdx;
 
+  const timeStampStartValues2 = values[valueIdx].timestamp;
+
   //２つ目の終了を探す
   while (valueIdx < values.length) {
     //１回分の終わりかどうか
@@ -89,6 +95,7 @@ const splitValuesInto3 = (values) => {
   const values2 = values.slice(values2StartIdx, valueIdx);
 
   const values3StartIdx = valueIdx + 3;
+  const timeStampStartValues3 = values[values3StartIdx].timestamp;
   //３つ目（valuesの最後までをvalues3に格納）
   const values3 = values.slice(values3StartIdx);
 
@@ -101,6 +108,8 @@ const splitValuesInto3 = (values) => {
     values1: values1,
     values2: values2,
     values3: values3,
+    timeStampStartValues2: timeStampStartValues2,
+    timeStampStartValues3: timeStampStartValues3,
   };
 
   return dividedValues;
@@ -156,15 +165,20 @@ try {
   const values1 = splitedValues.values1;
   const values2 = splitedValues.values2;
   const values3 = splitedValues.values3;
+  const timeStampStartValues2 = splitedValues.timeStampStartValues2;
+  const timeStampStartValues3 = splitedValues.timeStampStartValues3;
 
   console.log("1回目の入力");
-  printValue(values1);
+  const keyDatas1 = getkeyDatas(values1);
+  printKeyDatas(keyDatas1, 0);
   console.log("\n");
   console.log("2回目の入力");
-  printValue(values2);
+  const keyDatas2 = getkeyDatas(values2);
+  printKeyDatas(keyDatas2, timeStampStartValues2);
   console.log("\n");
   console.log("3回目の入力");
-  printValue(values3);
+  const keyDatas3 = getkeyDatas(values3);
+  printKeyDatas(keyDatas3, timeStampStartValues3);
 } catch (error) {
   console.log("エラーが発生しました: ", error);
 }
