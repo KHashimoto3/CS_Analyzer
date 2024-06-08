@@ -118,7 +118,7 @@ const splitValuesInto3 = (values) => {
   return dividedValues;
 };
 
-//各回の終了場所かどうか　TODO: 時間がある時にもっとスマートに書き直す
+//各回の終了場所かどうか →今の場所は３行空行の場所かどうか　TODO: 時間がある時にもっとスマートに書き直す
 const isTerminalPoint = (valueIdx, values) => {
   if (
     values[valueIdx].changeData.text.length === 2 &&
