@@ -51,16 +51,18 @@ char*  getkey(char* top, const char* word, char* buf)
   return  p;
 }
 
+
+//
 char*  getkey2(char* top, const char* word, char* buf)
 {
-  char*  p = top;
-  char*  q;
-  if((q = strstr(p, word))){
-    char*  r = strstr(q + 1, ":");
+  char*  p = top; //topの先頭アドレスを指すポインタ
+  char*  q; //strstrの返り値を格納するポインタ
+  if((q = strstr(p, word))){  //wordが見つかったら
+    char*  r = strstr(q + 1, ":");  
     if(! r){
       printf("r is null! at getkey() ....  word=[%s]\n", word);
     }
-    char*  s = r ? strstr(r + 1, ",") : NULL;
+    char*  s = r ? strstr(r + 1, ",") : NULL; //
     if(r && s){
       // sprintf(buf, "%02d  %.*s", (int)(s - r - 1), (int)(s - q), q);
       sprintf(buf, "%.*s", (int)(s - r - 1), r + 1);
@@ -75,13 +77,13 @@ char*  getkey2(char* top, const char* word, char* buf)
 int  main()
 {
   char  buf[640000];
-  char* p = buf;
-  char* q;
+  char* p = buf;  //bufの先頭アドレスを指すポインタ
+  char* q;  
 
-  fgets(buf, sizeof(buf), stdin);
+  fgets(buf, sizeof(buf), stdin); //最大64000文字をbufに読み込む
 
   int  n = 0;
-  while(p && *p){
+  while(p && *p){ //入力された文字列の最後まで繰り返す
     char  tmp[1024] = {0};
     //-------------------------------------
     if(! *p)
