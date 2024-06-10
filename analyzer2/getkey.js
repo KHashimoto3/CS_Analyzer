@@ -10,6 +10,7 @@ if (!fileName) {
 
 //１回分のvaluesを出力
 const printKeyDatas = (keyDatas, startTime) => {
+  console.log("データ数: ", keyDatas.length);
   keyDatas.map((keyData) => {
     const timestamp = keyData.timestamp - startTime;
     //inputおよびremovedのそれぞれの文字を''で囲み、カンマ区切りに整形
