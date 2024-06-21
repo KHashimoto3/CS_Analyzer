@@ -8,6 +8,9 @@ if (!fileName) {
   process.exit(1);
 }
 
+//各回の集計結果を格納する配列
+let resultArray = [];
+
 //１回分のvaluesを出力
 const printKeyDatas = (keyDatas, startTime) => {
   const valueCount = keyDatas.length;
@@ -27,6 +30,34 @@ const printKeyDatas = (keyDatas, startTime) => {
   console.log("データ数: ", keyDatas.length);
   console.log("合計時間: ", endTime, "ms");
   console.log("打鍵速度: ", typePerSec, "個/秒");
+
+  //集計結果を返す
+  const result = {
+    valueCount: valueCount,
+    endTime: endTime,
+    typePerSec: typePerSec,
+  };
+  return result;
+};
+
+//valuesの個数の差を求める
+const printDifferenceValuesCount = (resultArray) => {
+  const valuesCount2 = resultArray[1].valueCount;
+  const valuesCount3 = resultArray[2].valueCount;
+
+  //valuesの個数の差（絶対値）を求める
+  const differenceValuesCount = Math.abs(valuesCount2 - valuesCount3);
+
+  console.log("打鍵ミス数　（2回目・3回目）: ", differenceValuesCount);
+};
+
+//２回目と３回目の平均打鍵速度を求める
+const printAverageTypePerSec = (resultArray) => {
+  const typePerSec2 = resultArray[1].typePerSec;
+  const typePerSec3 = resultArray[2].typePerSec;
+
+  const averageTypePerSec = (typePerSec2 + typePerSec3) / 2;
+  console.log("平均打鍵速度（2回目・3回目）: ", averageTypePerSec, "個/秒");
 };
 
 //valueの中身を取り出す
@@ -183,17 +214,27 @@ try {
 
   console.log("1回目の入力");
   const keyDatas1 = getkeyDatas(values1);
-  printKeyDatas(keyDatas1, 0);
+  const result1 = printKeyDatas(keyDatas1, 0);
+  resultArray.push(result1);
   console.log("\n");
 
   console.log("2回目の入力");
   const keyDatas2 = getkeyDatas(values2);
-  printKeyDatas(keyDatas2, timeStampStartValues2);
+  const result2 = printKeyDatas(keyDatas2, timeStampStartValues2);
+  resultArray.push(result2);
   console.log("\n");
 
   console.log("3回目の入力");
   const keyDatas3 = getkeyDatas(values3);
-  printKeyDatas(keyDatas3, timeStampStartValues3);
+  const result3 = printKeyDatas(keyDatas3, timeStampStartValues3);
+  resultArray.push(result3);
+
+  console.log("\n=======全体的な集計結果=======");
+  //２回目と３回目のvaluesの個数の差を表示
+  printDifferenceValuesCount(resultArray);
+
+  //2回目と3回目の平均打鍵速度を求める
+  printAverageTypePerSec(resultArray);
 } catch (error) {
   console.log("エラーが発生しました: ", error);
 }
