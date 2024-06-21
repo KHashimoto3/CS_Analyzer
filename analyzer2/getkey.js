@@ -10,7 +10,8 @@ if (!fileName) {
 
 //１回分のvaluesを出力
 const printKeyDatas = (keyDatas, startTime) => {
-  console.log("データ数: ", keyDatas.length);
+  const valueCount = keyDatas.length;
+  let endTime = 0;
   keyDatas.map((keyData) => {
     const timestamp = keyData.timestamp - startTime;
     //inputおよびremovedのそれぞれの文字を''で囲み、カンマ区切りに整形
@@ -19,7 +20,13 @@ const printKeyDatas = (keyDatas, startTime) => {
     console.log(
       ` ${timestamp}\t\t${keyData.inputSize}\t${inputText}\t\t\t${keyData.removedSize}\t${removedText}`
     );
+    endTime = timestamp;
   });
+  const typePerSec = valueCount / (endTime / 1000);
+  console.log("\n=======集計結果=======");
+  console.log("データ数: ", keyDatas.length);
+  console.log("合計時間: ", endTime, "ms");
+  console.log("打鍵速度: ", typePerSec, "個/秒");
 };
 
 //valueの中身を取り出す
