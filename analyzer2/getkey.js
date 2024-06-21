@@ -48,7 +48,7 @@ const printDifferenceValuesCount = (resultArray) => {
   //valuesの個数の差（絶対値）を求める
   const differenceValuesCount = Math.abs(valuesCount2 - valuesCount3);
 
-  console.log("打鍵ミス数　（2回目・3回目）: ", differenceValuesCount);
+  console.log("打鍵ミス数　（2回目・3回目）: ", differenceValuesCount, "個");
 };
 
 //２回目と３回目の平均打鍵速度を求める
