@@ -15,7 +15,19 @@ let resultArray = [];
 const printKeyDatas = (keyDatas, startTime) => {
   const valueCount = keyDatas.length;
   let endTime = 0;
+  let inputCount = 0; //入力文字数
+  let removedCout = 0; //削除文字数
+  let inputDataCount = 0; //入力データ数
+  let removedDataCount = 0; //削除データ数
   keyDatas.map((keyData) => {
+    if (keyData.inputSize > 0) {
+      inputCount = inputCount + keyData.inputSize;
+      inputDataCount++;
+    }
+    if (keyData.removedSize > 0) {
+      removedCout = removedCout + keyData.removedSize;
+      removedDataCount++;
+    }
     const timestamp = keyData.timestamp - startTime;
     //inputおよびremovedのそれぞれの文字を''で囲み、カンマ区切りに整形
     const inputText = keyData.input.map((t) => `'${t}'`).join(", ");
@@ -28,6 +40,10 @@ const printKeyDatas = (keyDatas, startTime) => {
   const typePerSec = valueCount / (endTime / 1000);
   console.log("\n=======集計結果=======");
   console.log("データ数: ", keyDatas.length);
+  console.log("入力文字数: ", inputCount);
+  console.log("削除文字数: ", removedCout);
+  console.log("入力データ数: ", inputDataCount);
+  console.log("削除データ数: ", removedDataCount);
   console.log("合計時間: ", endTime, "ms");
   console.log("打鍵速度: ", Number.parseFloat(typePerSec).toFixed(3), "個/秒");
 
