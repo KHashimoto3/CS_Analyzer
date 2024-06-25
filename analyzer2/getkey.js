@@ -29,7 +29,7 @@ const printKeyDatas = (keyDatas, startTime) => {
   console.log("\n=======集計結果=======");
   console.log("データ数: ", keyDatas.length);
   console.log("合計時間: ", endTime, "ms");
-  console.log("打鍵速度: ", typePerSec, "個/秒");
+  console.log("打鍵速度: ", Number.parseFloat(typePerSec).toFixed(3), "個/秒");
 
   //集計結果を返す
   const result = {
@@ -57,7 +57,11 @@ const printAverageTypePerSec = (resultArray) => {
   const typePerSec3 = resultArray[2].typePerSec;
 
   const averageTypePerSec = (typePerSec2 + typePerSec3) / 2;
-  console.log("平均打鍵速度（2回目・3回目）: ", averageTypePerSec, "個/秒");
+  console.log(
+    "平均打鍵速度（2回目・3回目）: ",
+    Number.parseFloat(averageTypePerSec).toFixed(3),
+    "個/秒"
+  );
 };
 
 //valueの中身を取り出す
