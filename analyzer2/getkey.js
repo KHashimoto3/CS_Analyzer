@@ -32,9 +32,10 @@ const printKeyDatas = (keyDatas, startTime) => {
     //inputおよびremovedのそれぞれの文字を''で囲み、カンマ区切りに整形
     const inputText = keyData.input.map((t) => `'${t}'`).join(", ");
     const removedText = keyData.removed.map((t) => `'${t}'`).join(", ");
-    console.log(
+    //以下のコメントアウトを外すと、詳細な打鍵記録を表示
+    /*console.log(
       ` ${timestamp}\t\t${keyData.inputSize}\t${inputText}\t\t\t${keyData.removedSize}\t${removedText}`
-    );
+    );*/
     endTime = timestamp;
   });
   const typePerSec = valueCount / (endTime / 1000);
