@@ -39,6 +39,7 @@ const printKeyDatas = (keyDatas, startTime) => {
     endTime = timestamp;
   });
   const typePerSec = valueCount / (endTime / 1000);
+  /* TODO: 以下の情報を、直接printではなく、objectとして返すように変更 */
   console.log("\n=======集計結果=======");
   console.log("データ数: ", keyDatas.length);
   console.log("入力文字数: ", inputCount);
