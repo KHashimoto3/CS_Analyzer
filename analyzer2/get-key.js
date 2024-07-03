@@ -31,9 +31,9 @@ const printKeyDatas = (keyDatas, startTime) => {
     const inputText = keyData.input.map((t) => `'${t}'`).join(", ");
     const removedText = keyData.removed.map((t) => `'${t}'`).join(", ");
     //以下のコメントアウトを外すと、詳細な打鍵記録を表示
-    console.log(
+    /*console.log(
       ` ${timestamp}\t\t${keyData.inputSize}\t${inputText}\t\t\t${keyData.removedSize}\t${removedText}`
-    );
+    );*/
     endTime = timestamp;
   });
   const typePerSec = valueCount / (endTime / 1000);
@@ -113,6 +113,7 @@ try {
   const result = printKeyDatas(keyDatas, 0);
 
   console.log("分析完了しました！！！！");
+  console.log("以下をファイルに書き込みました。 ");
   console.log(result);
 
   //出力するファイル名
