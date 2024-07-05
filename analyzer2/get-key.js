@@ -2,15 +2,15 @@ const fs = require("fs");
 const path = require("path");
 
 // ファイル名をプログラム引数として取得
-const fileName = process.argv[2];
+const readFileName = process.argv[2];
 
-if (!fileName) {
+if (!readFileName) {
   console.log("ファイル名を指定してください");
   process.exit(1);
 }
 
 //１回分のvaluesを出力
-const printKeyDatas = (keyDatas, startTime) => {
+const printKeyDatas = (keyDatas) => {
   const valueCount = keyDatas.length;
   let endTime = 0;
   let inputCount = 0; //入力文字数
@@ -27,10 +27,9 @@ const printKeyDatas = (keyDatas, startTime) => {
       removedCout = removedCout + keyData.removedSize;
       removedDataCount++;
     }
-    const timestamp = keyData.timestamp - startTime;
 
     const adjustedKeyData = {
-      timestamp: timestamp,
+      timestamp: keyData.timestamp,
       inputSize: keyData.inputSize,
       input: keyData.input,
       removedSize: keyData.removedSize,
@@ -38,7 +37,7 @@ const printKeyDatas = (keyDatas, startTime) => {
     };
     adjustedKeyDatas.push(adjustedKeyData);
 
-    endTime = timestamp;
+    endTime = keyData.timestamp;
   });
   const typePerSec = valueCount / (endTime / 1000);
   /* TODO: 以下の情報を、直接printではなく、objectとして返すように変更 */
@@ -65,11 +64,11 @@ const printKeyDatas = (keyDatas, startTime) => {
   return result;
 };
 
-//valueの中身を取り出す
-const getkeyDatas = (values) => {
+//valueの中身を取り出す（startTimeで引いた時間をtimestampとする）
+const getkeyDatas = (values, startTime) => {
   let keyDatas = [];
   values.map((value) => {
-    const timestamp = value.timestamp;
+    const timestamp = value.timestamp - startTime;
     const input = value.changeData.text;
     const inputSize = countInputSize(input);
     const removed = value.changeData.removed;
@@ -106,24 +105,27 @@ const countRemovedSize = (removed) => {
 
 //ファイルを読み込む（同期）
 try {
-  console.log("読み込むファイル名: ", fileName);
+  console.log("読み込むファイル名: ", readFileName);
   //ファイルを読み込む
-  const jsonString = fs.readFileSync(fileName, "utf8");
+  const jsonString = fs.readFileSync(
+    "divided-record-files/" + readFileName,
+    "utf8"
+  );
   //JSON形式に変換
   const obj = JSON.parse(jsonString);
   console.log("読み込んだファイルのヘッダー: ", obj.header);
   const values = obj.value;
   const startTime = obj.header.timeStampStart;
 
-  const keyDatas = getkeyDatas(values);
-  const result = printKeyDatas(keyDatas, startTime);
+  const keyDatas = getkeyDatas(values, startTime);
+  const result = printKeyDatas(keyDatas);
 
   console.log("分析完了しました！！！！");
   console.log("以下をファイルに書き込みました。 ");
   console.log(result);
 
   //出力するファイル名
-  const WriteFileName = `${obj.header.name}_${obj.header.title}_1.json`;
+  const WriteFileName = `${readFileName}`;
 
   //出力するファイルのパス
   const filePath = path.join("get-key-result-files", WriteFileName);
