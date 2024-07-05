@@ -41,14 +41,14 @@ const printKeyDatas = (keyDatas) => {
   });
   const typePerSec = valueCount / (endTime / 1000);
   /* TODO: 以下の情報を、直接printではなく、objectとして返すように変更 */
-  console.log("\n=======集計結果=======");
+  /*console.log("\n=======集計結果=======");
   console.log("データ数: ", keyDatas.length);
   console.log("入力文字数: ", inputCount);
   console.log("削除文字数: ", removedCout);
   console.log("入力データ数: ", inputDataCount);
   console.log("削除データ数: ", removedDataCount);
   console.log("合計時間: ", endTime, "ms");
-  console.log("打鍵速度: ", Number.parseFloat(typePerSec).toFixed(3), "個/秒");
+  console.log("打鍵速度: ", Number.parseFloat(typePerSec).toFixed(3), "個/秒");*/
 
   //集計結果を返す
   const result = {
@@ -105,27 +105,23 @@ const countRemovedSize = (removed) => {
 
 //ファイルを読み込む（同期）
 try {
-  console.log("読み込むファイル名: ", readFileName);
+  //console.log("読み込むファイル名: ", readFileName);
   //ファイルを読み込む
-  const jsonString = fs.readFileSync(
-    "divided-record-files/" + readFileName,
-    "utf8"
-  );
+  const jsonString = fs.readFileSync(readFileName, "utf8");
   //JSON形式に変換
   const obj = JSON.parse(jsonString);
-  console.log("読み込んだファイルのヘッダー: ", obj.header);
+  //console.log("読み込んだファイルのヘッダー: ", obj.header);
   const values = obj.value;
   const startTime = obj.header.timeStampStart;
 
   const keyDatas = getkeyDatas(values, startTime);
   const result = printKeyDatas(keyDatas);
 
-  console.log("分析完了しました！！！！");
-  console.log("以下をファイルに書き込みました。 ");
-  console.log(result);
+  //console.log("分析完了しました！！！！");
 
   //出力するファイル名
-  const WriteFileName = `${readFileName}`;
+  //readFileName先頭の「divided-record-files/」を取り除く
+  const WriteFileName = readFileName.replace("divided-record-files/", "");
 
   //出力するファイルのパス
   const filePath = path.join("get-key-result-files", WriteFileName);
