@@ -18,14 +18,47 @@ const printKeyDatas = (keyDatas) => {
   let inputDataCount = 0; //入力データ数
   let removedDataCount = 0; //削除データ数
   let adjustedKeyDatas = [];
+
+  //削除して、同じ文字数入力し直す場合の情報
+  let middleRemovedStart = 0;
+  let reInputEnd = 0;
+  let middleRemoveLevel = 0; //書き直しのレベル
+  let totalReInputCnt = 0; //書き直しの回数
+  let totalReInputTime = 0; //書き直しにかかった時間
+
   keyDatas.map((keyData) => {
-    if (keyData.inputSize > 0) {
-      inputCount = inputCount + keyData.inputSize;
-      inputDataCount++;
-    }
-    if (keyData.removedSize > 0) {
-      removedCout = removedCout + keyData.removedSize;
-      removedDataCount++;
+    if (middleRemoveLevel > 0) {
+      if (keyData.inputSize > 0) {
+        inputCount = inputCount + keyData.inputSize;
+        inputDataCount++;
+        middleRemoveLevel--; //１つ書き直した
+      }
+      if (keyData.removedSize > 0) {
+        removedCout = removedCout + keyData.removedSize;
+        removedDataCount++;
+        middleRemoveLevel++; //書き直しのレベルをカウント
+      }
+
+      if (middleRemoveLevel <= 0) {
+        //書き直しにかかった時間を計算
+        reInputEnd = keyData.timestamp; //書き直しの終了時間
+        const reInputTime = reInputEnd - middleRemovedStart;
+        totalReInputTime += reInputTime;
+        totalReInputCnt++;
+        middleRemovedStart = 0;
+        reInputEnd = 0;
+      }
+    } else {
+      if (keyData.inputSize > 0) {
+        inputCount = inputCount + keyData.inputSize;
+        inputDataCount++;
+      }
+      if (keyData.removedSize > 0) {
+        removedCout = removedCout + keyData.removedSize;
+        removedDataCount++;
+        middleRemoveLevel++; //書き直しのレベルをカウント
+        middleRemovedStart = keyData.timestamp; //書き直しの開始時間
+      }
     }
 
     const adjustedKeyData = {
@@ -51,7 +84,9 @@ const printKeyDatas = (keyDatas) => {
   console.log("打鍵速度: ", Number.parseFloat(typePerSec).toFixed(3), "個/秒");*/
 
   //分析項目：入力ミス率
-  const missTypeRate = (removedCout / (inputCount + removedCout)) * 100;
+  const missTypeRate = removedCout / (inputCount + removedCout);
+  //分析項目：書き直した時間の割合
+  const reInputRate = totalReInputTime / endTime;
 
   //集計結果を返す
   const result = {
@@ -63,6 +98,9 @@ const printKeyDatas = (keyDatas) => {
     missTypeRate: Number.parseFloat(missTypeRate), //入力ミス率
     totalTime: endTime, //ms
     typePerSec: typePerSec, //個/秒
+    totalReInputCnt: totalReInputCnt, //書き直しの回数
+    totalReInputTime: totalReInputTime, //書き直しにかかった時間
+    reInputRate: Number.parseFloat(reInputRate), //書き直した時間の割合
     adjustedKeyDatas: adjustedKeyDatas,
   };
   return result;
