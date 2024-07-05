@@ -61,15 +61,6 @@ const printKeyDatas = (keyDatas) => {
       }
     }
 
-    const adjustedKeyData = {
-      timestamp: keyData.timestamp,
-      inputSize: keyData.inputSize,
-      input: keyData.input,
-      removedSize: keyData.removedSize,
-      removed: keyData.removed,
-    };
-    adjustedKeyDatas.push(adjustedKeyData);
-
     endTime = keyData.timestamp;
   });
   const typePerSec = valueCount / (endTime / 1000);
@@ -101,7 +92,6 @@ const printKeyDatas = (keyDatas) => {
     totalReInputCnt: totalReInputCnt, //書き直しの回数
     totalReInputTime: totalReInputTime, //書き直しにかかった時間
     reInputRate: Number.parseFloat(reInputRate), //書き直した時間の割合
-    adjustedKeyDatas: adjustedKeyDatas,
   };
   return result;
 };
@@ -159,6 +149,14 @@ try {
   const keyDatas = getkeyDatas(values, startTime);
   const result = printKeyDatas(keyDatas);
 
+  const header = obj.header;
+
+  const outputObj = {
+    header: header,
+    result: result,
+    keyDatas: keyDatas,
+  };
+
   //console.log("分析完了しました！！！！");
 
   //出力するファイル名
@@ -168,7 +166,7 @@ try {
   //出力するファイルのパス
   const filePath = path.join("get-key-result-files", WriteFileName);
 
-  const fileString = JSON.stringify(result, null, 2);
+  const fileString = JSON.stringify(outputObj, null, 2);
 
   //ファイル書き込み
   fs.writeFileSync(filePath, fileString);
