@@ -50,6 +50,9 @@ const printKeyDatas = (keyDatas) => {
   console.log("合計時間: ", endTime, "ms");
   console.log("打鍵速度: ", Number.parseFloat(typePerSec).toFixed(3), "個/秒");*/
 
+  //分析項目：入力ミス率
+  const missTypeRate = (removedCout / (inputCount + removedCout)) * 100;
+
   //集計結果を返す
   const result = {
     datasCount: keyDatas.length,
@@ -57,6 +60,7 @@ const printKeyDatas = (keyDatas) => {
     removedCharLength: removedCout,
     inputDataCount: inputDataCount,
     removedDataCount: removedDataCount,
+    missTypeRate: Number.parseFloat(missTypeRate), //入力ミス率
     totalTime: endTime, //ms
     typePerSec: typePerSec, //個/秒
     adjustedKeyDatas: adjustedKeyDatas,
