@@ -1,0 +1,3221 @@
+[
+  {
+    "header": {
+      "userId": -1,
+      "name": "A01",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486572612,
+      "comment": "",
+      "recordingTime": 134202,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 51,
+      "inputCharLength": 60,
+      "removedCharLength": 0,
+      "inputDataCount": 49,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 41867,
+      "typePerSec": 1.2181431676499392,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A01",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486572612,
+      "comment": "",
+      "recordingTime": 134202,
+      "recNumber": 2,
+      "timeStampStart": 44359
+    },
+    "result": {
+      "datasCount": 59,
+      "inputCharLength": 64,
+      "removedCharLength": 4,
+      "inputDataCount": 53,
+      "removedDataCount": 4,
+      "missTypeRate": 0.058823529411764705,
+      "totalTime": 46582,
+      "typePerSec": 1.266583658924048,
+      "totalReInputCnt": 3,
+      "totalReInputTime": 9491,
+      "reInputRate": 0.20374822892962946
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A01",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486572612,
+      "comment": "",
+      "recordingTime": 134202,
+      "recNumber": 3,
+      "timeStampStart": 94136
+    },
+    "result": {
+      "datasCount": 55,
+      "inputCharLength": 62,
+      "removedCharLength": 2,
+      "inputDataCount": 51,
+      "removedDataCount": 2,
+      "missTypeRate": 0.03125,
+      "totalTime": 33613,
+      "typePerSec": 1.636271680599768,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 996,
+      "reInputRate": 0.02963139261595216
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A01",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486786261,
+      "comment": "",
+      "recordingTime": 197560,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 81,
+      "inputCharLength": 88,
+      "removedCharLength": 0,
+      "inputDataCount": 78,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 63003,
+      "typePerSec": 1.285653064139803,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A01",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486786261,
+      "comment": "",
+      "recordingTime": 197560,
+      "recNumber": 2,
+      "timeStampStart": 66341
+    },
+    "result": {
+      "datasCount": 86,
+      "inputCharLength": 91,
+      "removedCharLength": 2,
+      "inputDataCount": 81,
+      "removedDataCount": 2,
+      "missTypeRate": 0.021505376344086023,
+      "totalTime": 50769,
+      "typePerSec": 1.6939470936989107,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 765,
+      "reInputRate": 0.015068250310228683
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A01",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486786261,
+      "comment": "",
+      "recordingTime": 197560,
+      "recNumber": 3,
+      "timeStampStart": 119719
+    },
+    "result": {
+      "datasCount": 105,
+      "inputCharLength": 100,
+      "removedCharLength": 12,
+      "inputDataCount": 90,
+      "removedDataCount": 12,
+      "missTypeRate": 0.10714285714285714,
+      "totalTime": 74794,
+      "typePerSec": 1.4038559242720006,
+      "totalReInputCnt": 9,
+      "totalReInputTime": 8519,
+      "reInputRate": 0.11389951065593497
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A01",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717487010415,
+      "comment": "",
+      "recordingTime": 210690,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 102,
+      "inputCharLength": 98,
+      "removedCharLength": 6,
+      "inputDataCount": 92,
+      "removedDataCount": 6,
+      "missTypeRate": 0.057692307692307696,
+      "totalTime": 72155,
+      "typePerSec": 1.413623449518398,
+      "totalReInputCnt": 3,
+      "totalReInputTime": 6964,
+      "reInputRate": 0.09651444806319728
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A01",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717487010415,
+      "comment": "",
+      "recordingTime": 210690,
+      "recNumber": 2,
+      "timeStampStart": 73824
+    },
+    "result": {
+      "datasCount": 108,
+      "inputCharLength": 101,
+      "removedCharLength": 9,
+      "inputDataCount": 95,
+      "removedDataCount": 9,
+      "missTypeRate": 0.08181818181818182,
+      "totalTime": 66034,
+      "typePerSec": 1.6355210951933852,
+      "totalReInputCnt": 5,
+      "totalReInputTime": 4780,
+      "reInputRate": 0.07238695217615168
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A01",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717487010415,
+      "comment": "",
+      "recordingTime": 210690,
+      "recNumber": 3,
+      "timeStampStart": 141582
+    },
+    "result": {
+      "datasCount": 92,
+      "inputCharLength": 93,
+      "removedCharLength": 1,
+      "inputDataCount": 87,
+      "removedDataCount": 1,
+      "missTypeRate": 0.010638297872340425,
+      "totalTime": 63378,
+      "typePerSec": 1.4516078134368393,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 173,
+      "reInputRate": 0.0027296538230931868
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A01",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717487174560,
+      "comment": "",
+      "recordingTime": 150560,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 68,
+      "inputCharLength": 62,
+      "removedCharLength": 5,
+      "inputDataCount": 60,
+      "removedDataCount": 5,
+      "missTypeRate": 0.07462686567164178,
+      "totalTime": 41848,
+      "typePerSec": 1.6249283119862359,
+      "totalReInputCnt": 4,
+      "totalReInputTime": 2759,
+      "reInputRate": 0.06592907665838271
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A01",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717487174560,
+      "comment": "",
+      "recordingTime": 150560,
+      "recNumber": 2,
+      "timeStampStart": 50301
+    },
+    "result": {
+      "datasCount": 70,
+      "inputCharLength": 63,
+      "removedCharLength": 6,
+      "inputDataCount": 61,
+      "removedDataCount": 6,
+      "missTypeRate": 0.08695652173913043,
+      "totalTime": 48354,
+      "typePerSec": 1.4476568639616165,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 6371,
+      "reInputRate": 0.1317574554328494
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A01",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717487174560,
+      "comment": "",
+      "recordingTime": 150560,
+      "recNumber": 3,
+      "timeStampStart": 101894
+    },
+    "result": {
+      "datasCount": 66,
+      "inputCharLength": 61,
+      "removedCharLength": 4,
+      "inputDataCount": 59,
+      "removedDataCount": 4,
+      "missTypeRate": 0.06153846153846154,
+      "totalTime": 32182,
+      "typePerSec": 2.0508358709837795,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 586,
+      "reInputRate": 0.018208936672674165
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A02",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486575776,
+      "comment": "",
+      "recordingTime": 114953,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 62,
+      "inputCharLength": 70,
+      "removedCharLength": 1,
+      "inputDataCount": 59,
+      "removedDataCount": 1,
+      "missTypeRate": 0.014084507042253521,
+      "totalTime": 35440,
+      "typePerSec": 1.7494356659142214,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 291,
+      "reInputRate": 0.008211060948081264
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A02",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486575776,
+      "comment": "",
+      "recordingTime": 114953,
+      "recNumber": 2,
+      "timeStampStart": 39344
+    },
+    "result": {
+      "datasCount": 72,
+      "inputCharLength": 77,
+      "removedCharLength": 8,
+      "inputDataCount": 62,
+      "removedDataCount": 8,
+      "missTypeRate": 0.09411764705882353,
+      "totalTime": 31808,
+      "typePerSec": 2.2635814889336014,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 5231,
+      "reInputRate": 0.16445548289738432
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A02",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486575776,
+      "comment": "",
+      "recordingTime": 114953,
+      "recNumber": 3,
+      "timeStampStart": 72732
+    },
+    "result": {
+      "datasCount": 66,
+      "inputCharLength": 72,
+      "removedCharLength": 3,
+      "inputDataCount": 61,
+      "removedDataCount": 3,
+      "missTypeRate": 0.04,
+      "totalTime": 29242,
+      "typePerSec": 2.2570275630941796,
+      "totalReInputCnt": 3,
+      "totalReInputTime": 4091,
+      "reInputRate": 0.13990151152451952
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A02",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486748004,
+      "comment": "",
+      "recordingTime": 140188,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 95,
+      "inputCharLength": 95,
+      "removedCharLength": 7,
+      "inputDataCount": 85,
+      "removedDataCount": 7,
+      "missTypeRate": 0.06862745098039216,
+      "totalTime": 53471,
+      "typePerSec": 1.776663986085916,
+      "totalReInputCnt": 4,
+      "totalReInputTime": 4747,
+      "reInputRate": 0.08877709412578781
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A02",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486748004,
+      "comment": "",
+      "recordingTime": 140188,
+      "recNumber": 2,
+      "timeStampStart": 55242
+    },
+    "result": {
+      "datasCount": 85,
+      "inputCharLength": 90,
+      "removedCharLength": 2,
+      "inputDataCount": 80,
+      "removedDataCount": 2,
+      "missTypeRate": 0.021739130434782608,
+      "totalTime": 41306,
+      "typePerSec": 2.0578124243451317,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 389,
+      "reInputRate": 0.00941751803612066
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A02",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486748004,
+      "comment": "",
+      "recordingTime": 140188,
+      "recNumber": 3,
+      "timeStampStart": 99231
+    },
+    "result": {
+      "datasCount": 91,
+      "inputCharLength": 93,
+      "removedCharLength": 5,
+      "inputDataCount": 83,
+      "removedDataCount": 5,
+      "missTypeRate": 0.05102040816326531,
+      "totalTime": 32658,
+      "typePerSec": 2.7864535489007287,
+      "totalReInputCnt": 3,
+      "totalReInputTime": 2888,
+      "reInputRate": 0.0884316247167616
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A02",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486916081,
+      "comment": "",
+      "recordingTime": 134809,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 106,
+      "inputCharLength": 100,
+      "removedCharLength": 8,
+      "inputDataCount": 94,
+      "removedDataCount": 8,
+      "missTypeRate": 0.07407407407407407,
+      "totalTime": 43756,
+      "typePerSec": 2.4225249108693663,
+      "totalReInputCnt": 3,
+      "totalReInputTime": 3814,
+      "reInputRate": 0.08716518877411097
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A02",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486916081,
+      "comment": "",
+      "recordingTime": 134809,
+      "recNumber": 2,
+      "timeStampStart": 45529
+    },
+    "result": {
+      "datasCount": 92,
+      "inputCharLength": 93,
+      "removedCharLength": 1,
+      "inputDataCount": 87,
+      "removedDataCount": 1,
+      "missTypeRate": 0.010638297872340425,
+      "totalTime": 38653,
+      "typePerSec": 2.380151605308773,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 322,
+      "reInputRate": 0.008330530618580705
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A02",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717486916081,
+      "comment": "",
+      "recordingTime": 134809,
+      "recNumber": 3,
+      "timeStampStart": 85621
+    },
+    "result": {
+      "datasCount": 94,
+      "inputCharLength": 94,
+      "removedCharLength": 2,
+      "inputDataCount": 88,
+      "removedDataCount": 2,
+      "missTypeRate": 0.020833333333333332,
+      "totalTime": 33229,
+      "typePerSec": 2.828854314002829,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 795,
+      "reInputRate": 0.023924884889704776
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A02",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717487058057,
+      "comment": "",
+      "recordingTime": 114953,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 61,
+      "inputCharLength": 59,
+      "removedCharLength": 1,
+      "inputDataCount": 57,
+      "removedDataCount": 1,
+      "missTypeRate": 0.016666666666666666,
+      "totalTime": 27587,
+      "typePerSec": 2.211186428390184,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 5707,
+      "reInputRate": 0.2068728024069308
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A02",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717487058057,
+      "comment": "",
+      "recordingTime": 114953,
+      "recNumber": 2,
+      "timeStampStart": 30479
+    },
+    "result": {
+      "datasCount": 59,
+      "inputCharLength": 58,
+      "removedCharLength": 0,
+      "inputDataCount": 56,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 16198,
+      "typePerSec": 3.6424249907395976,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A02",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717487058057,
+      "comment": "",
+      "recordingTime": 114953,
+      "recNumber": 3,
+      "timeStampStart": 47586
+    },
+    "result": {
+      "datasCount": 66,
+      "inputCharLength": 60,
+      "removedCharLength": 5,
+      "inputDataCount": 58,
+      "removedDataCount": 5,
+      "missTypeRate": 0.07692307692307693,
+      "totalTime": 40106,
+      "typePerSec": 1.6456390565002743,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 264,
+      "reInputRate": 0.006582556226001097
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A03",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717561315045,
+      "comment": "",
+      "recordingTime": 193730,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 54,
+      "inputCharLength": 61,
+      "removedCharLength": 2,
+      "inputDataCount": 50,
+      "removedDataCount": 2,
+      "missTypeRate": 0.031746031746031744,
+      "totalTime": 52630,
+      "typePerSec": 1.0260307809234277,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 4785,
+      "reInputRate": 0.09091772753182595
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A03",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717561315045,
+      "comment": "",
+      "recordingTime": 193730,
+      "recNumber": 2,
+      "timeStampStart": 59589
+    },
+    "result": {
+      "datasCount": 55,
+      "inputCharLength": 63,
+      "removedCharLength": 2,
+      "inputDataCount": 52,
+      "removedDataCount": 2,
+      "missTypeRate": 0.03076923076923077,
+      "totalTime": 50718,
+      "typePerSec": 1.0844276193856224,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 1914,
+      "reInputRate": 0.037738081154619664
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A03",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717561315045,
+      "comment": "",
+      "recordingTime": 193730,
+      "recNumber": 3,
+      "timeStampStart": 117313
+    },
+    "result": {
+      "datasCount": 62,
+      "inputCharLength": 67,
+      "removedCharLength": 6,
+      "inputDataCount": 55,
+      "removedDataCount": 6,
+      "missTypeRate": 0.0821917808219178,
+      "totalTime": 50605,
+      "typePerSec": 1.2251753779270824,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 3026,
+      "reInputRate": 0.05979646280011856
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A03",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717561527607,
+      "comment": "",
+      "recordingTime": 199123,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 79,
+      "inputCharLength": 86,
+      "removedCharLength": 0,
+      "inputDataCount": 76,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 60207,
+      "typePerSec": 1.3121397844104505,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A03",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717561527607,
+      "comment": "",
+      "recordingTime": 199123,
+      "recNumber": 2,
+      "timeStampStart": 64628
+    },
+    "result": {
+      "datasCount": 98,
+      "inputCharLength": 95,
+      "removedCharLength": 8,
+      "inputDataCount": 85,
+      "removedDataCount": 8,
+      "missTypeRate": 0.07766990291262135,
+      "totalTime": 56423,
+      "typePerSec": 1.736880350211793,
+      "totalReInputCnt": 5,
+      "totalReInputTime": 3507,
+      "reInputRate": 0.0621555039611506
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A03",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717561527607,
+      "comment": "",
+      "recordingTime": 199123,
+      "recNumber": 3,
+      "timeStampStart": 124232
+    },
+    "result": {
+      "datasCount": 89,
+      "inputCharLength": 91,
+      "removedCharLength": 5,
+      "inputDataCount": 81,
+      "removedDataCount": 5,
+      "missTypeRate": 0.052083333333333336,
+      "totalTime": 47367,
+      "typePerSec": 1.8789452572466063,
+      "totalReInputCnt": 3,
+      "totalReInputTime": 3743,
+      "reInputRate": 0.07902125952667469
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A03",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717561721858,
+      "comment": "",
+      "recordingTime": 178796,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 101,
+      "inputCharLength": 97,
+      "removedCharLength": 5,
+      "inputDataCount": 92,
+      "removedDataCount": 5,
+      "missTypeRate": 0.049019607843137254,
+      "totalTime": 62533,
+      "typePerSec": 1.6151472022771975,
+      "totalReInputCnt": 3,
+      "totalReInputTime": 1788,
+      "reInputRate": 0.028592902947243856
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A03",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717561721858,
+      "comment": "",
+      "recordingTime": 178796,
+      "recNumber": 2,
+      "timeStampStart": 64044
+    },
+    "result": {
+      "datasCount": 93,
+      "inputCharLength": 93,
+      "removedCharLength": 1,
+      "inputDataCount": 88,
+      "removedDataCount": 1,
+      "missTypeRate": 0.010638297872340425,
+      "totalTime": 48863,
+      "typePerSec": 1.9032806008636391,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 618,
+      "reInputRate": 0.012647606573480958
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A03",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717561721858,
+      "comment": "",
+      "recordingTime": 178796,
+      "recNumber": 3,
+      "timeStampStart": 115232
+    },
+    "result": {
+      "datasCount": 101,
+      "inputCharLength": 97,
+      "removedCharLength": 5,
+      "inputDataCount": 92,
+      "removedDataCount": 5,
+      "missTypeRate": 0.049019607843137254,
+      "totalTime": 52198,
+      "typePerSec": 1.9349400360167055,
+      "totalReInputCnt": 4,
+      "totalReInputTime": 3049,
+      "reInputRate": 0.05841219970113797
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A03",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717561857169,
+      "comment": "",
+      "recordingTime": 112209,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 58,
+      "inputCharLength": 57,
+      "removedCharLength": 0,
+      "inputDataCount": 55,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 19705,
+      "typePerSec": 2.943415376807917,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A03",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717561857169,
+      "comment": "",
+      "recordingTime": 112209,
+      "recNumber": 2,
+      "timeStampStart": 22920
+    },
+    "result": {
+      "datasCount": 62,
+      "inputCharLength": 59,
+      "removedCharLength": 2,
+      "inputDataCount": 57,
+      "removedDataCount": 2,
+      "missTypeRate": 0.03278688524590164,
+      "totalTime": 24900,
+      "typePerSec": 2.48995983935743,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 944,
+      "reInputRate": 0.03791164658634538
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A03",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717561857169,
+      "comment": "",
+      "recordingTime": 112209,
+      "recNumber": 3,
+      "timeStampStart": 50137
+    },
+    "result": {
+      "datasCount": 60,
+      "inputCharLength": 58,
+      "removedCharLength": 1,
+      "inputDataCount": 56,
+      "removedDataCount": 1,
+      "missTypeRate": 0.01694915254237288,
+      "totalTime": 23383,
+      "typePerSec": 2.565966727964761,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 576,
+      "reInputRate": 0.024633280588461703
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A04",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642354549,
+      "comment": "",
+      "recordingTime": 155218,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 49,
+      "inputCharLength": 57,
+      "removedCharLength": 0,
+      "inputDataCount": 47,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 66888,
+      "typePerSec": 0.7325678746561416,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A04",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642354549,
+      "comment": "",
+      "recordingTime": 155218,
+      "recNumber": 2,
+      "timeStampStart": 71523
+    },
+    "result": {
+      "datasCount": 48,
+      "inputCharLength": 57,
+      "removedCharLength": 0,
+      "inputDataCount": 46,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 36676,
+      "typePerSec": 1.3087577707492637,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A04",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642354549,
+      "comment": "",
+      "recordingTime": 155218,
+      "recNumber": 3,
+      "timeStampStart": 114526
+    },
+    "result": {
+      "datasCount": 55,
+      "inputCharLength": 61,
+      "removedCharLength": 4,
+      "inputDataCount": 47,
+      "removedDataCount": 4,
+      "missTypeRate": 0.06153846153846154,
+      "totalTime": 37172,
+      "typePerSec": 1.4796083073280966,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A04",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642544976,
+      "comment": "",
+      "recordingTime": 173166,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 68,
+      "inputCharLength": 74,
+      "removedCharLength": 1,
+      "inputDataCount": 64,
+      "removedDataCount": 1,
+      "missTypeRate": 0.013333333333333334,
+      "totalTime": 59111,
+      "typePerSec": 1.150378102214478,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 429,
+      "reInputRate": 0.00725753243897075
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A04",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642544976,
+      "comment": "",
+      "recordingTime": 173166,
+      "recNumber": 2,
+      "timeStampStart": 66817
+    },
+    "result": {
+      "datasCount": 74,
+      "inputCharLength": 78,
+      "removedCharLength": 5,
+      "inputDataCount": 67,
+      "removedDataCount": 4,
+      "missTypeRate": 0.060240963855421686,
+      "totalTime": 48480,
+      "typePerSec": 1.5264026402640265,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 3015,
+      "reInputRate": 0.06219059405940594
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A04",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642544976,
+      "comment": "",
+      "recordingTime": 173166,
+      "recNumber": 3,
+      "timeStampStart": 118488
+    },
+    "result": {
+      "datasCount": 70,
+      "inputCharLength": 75,
+      "removedCharLength": 2,
+      "inputDataCount": 65,
+      "removedDataCount": 2,
+      "missTypeRate": 0.025974025974025976,
+      "totalTime": 48872,
+      "typePerSec": 1.4323129808479294,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 917,
+      "reInputRate": 0.018763300049107874
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A04",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642758268,
+      "comment": "",
+      "recordingTime": 196168,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 88,
+      "inputCharLength": 89,
+      "removedCharLength": 1,
+      "inputDataCount": 83,
+      "removedDataCount": 1,
+      "missTypeRate": 0.011111111111111112,
+      "totalTime": 76269,
+      "typePerSec": 1.1538108536889167,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 412,
+      "reInputRate": 0.0054019326331799285
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A04",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642758268,
+      "comment": "",
+      "recordingTime": 196168,
+      "recNumber": 2,
+      "timeStampStart": 77598
+    },
+    "result": {
+      "datasCount": 90,
+      "inputCharLength": 90,
+      "removedCharLength": 2,
+      "inputDataCount": 84,
+      "removedDataCount": 2,
+      "missTypeRate": 0.021739130434782608,
+      "totalTime": 56782,
+      "typePerSec": 1.5850093339438556,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 1762,
+      "reInputRate": 0.03103096051565637
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A04",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642758268,
+      "comment": "",
+      "recordingTime": 196168,
+      "recNumber": 3,
+      "timeStampStart": 136894
+    },
+    "result": {
+      "datasCount": 90,
+      "inputCharLength": 90,
+      "removedCharLength": 2,
+      "inputDataCount": 84,
+      "removedDataCount": 2,
+      "missTypeRate": 0.021739130434782608,
+      "totalTime": 52844,
+      "typePerSec": 1.7031261827265158,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 1082,
+      "reInputRate": 0.020475361441223222
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A04",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642910854,
+      "comment": "",
+      "recordingTime": 138128,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 56,
+      "inputCharLength": 54,
+      "removedCharLength": 1,
+      "inputDataCount": 52,
+      "removedDataCount": 1,
+      "missTypeRate": 0.01818181818181818,
+      "totalTime": 39778,
+      "typePerSec": 1.4078133641711499,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 582,
+      "reInputRate": 0.014631203177635879
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A04",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642910854,
+      "comment": "",
+      "recordingTime": 138128,
+      "recNumber": 2,
+      "timeStampStart": 43705
+    },
+    "result": {
+      "datasCount": 66,
+      "inputCharLength": 63,
+      "removedCharLength": 2,
+      "inputDataCount": 61,
+      "removedDataCount": 2,
+      "missTypeRate": 0.03076923076923077,
+      "totalTime": 48815,
+      "typePerSec": 1.3520434292737888,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 648,
+      "reInputRate": 0.013274608214688108
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A04",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642910854,
+      "comment": "",
+      "recordingTime": 138128,
+      "recNumber": 3,
+      "timeStampStart": 96680
+    },
+    "result": {
+      "datasCount": 66,
+      "inputCharLength": 62,
+      "removedCharLength": 5,
+      "inputDataCount": 59,
+      "removedDataCount": 4,
+      "missTypeRate": 0.07462686567164178,
+      "totalTime": 37103,
+      "typePerSec": 1.7788319003854136,
+      "totalReInputCnt": 4,
+      "totalReInputTime": 1716,
+      "reInputRate": 0.046249629410020754
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A05",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642332450,
+      "comment": "",
+      "recordingTime": 134156,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 50,
+      "inputCharLength": 58,
+      "removedCharLength": 1,
+      "inputDataCount": 47,
+      "removedDataCount": 1,
+      "missTypeRate": 0.01694915254237288,
+      "totalTime": 49002,
+      "typePerSec": 1.0203665156524222,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 610,
+      "reInputRate": 0.012448471490959553
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A05",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642332450,
+      "comment": "",
+      "recordingTime": 134156,
+      "recNumber": 2,
+      "timeStampStart": 50981
+    },
+    "result": {
+      "datasCount": 48,
+      "inputCharLength": 57,
+      "removedCharLength": 0,
+      "inputDataCount": 46,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 30709,
+      "typePerSec": 1.5630596893418867,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A05",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642332450,
+      "comment": "",
+      "recordingTime": 134156,
+      "recNumber": 3,
+      "timeStampStart": 84996
+    },
+    "result": {
+      "datasCount": 48,
+      "inputCharLength": 57,
+      "removedCharLength": 0,
+      "inputDataCount": 46,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 35906,
+      "typePerSec": 1.3368239291483317,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A05",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642617241,
+      "comment": "",
+      "recordingTime": 127177,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 67,
+      "inputCharLength": 292,
+      "removedCharLength": 219,
+      "inputDataCount": 64,
+      "removedDataCount": 1,
+      "missTypeRate": 0.42857142857142855,
+      "totalTime": 46024,
+      "typePerSec": 1.4557622110203372,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 1796,
+      "reInputRate": 0.03902311837302277
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A05",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642617241,
+      "comment": "",
+      "recordingTime": 127177,
+      "recNumber": 2,
+      "timeStampStart": 48294
+    },
+    "result": {
+      "datasCount": 68,
+      "inputCharLength": 74,
+      "removedCharLength": 1,
+      "inputDataCount": 64,
+      "removedDataCount": 1,
+      "missTypeRate": 0.013333333333333334,
+      "totalTime": 37219,
+      "typePerSec": 1.8270238319138075,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 382,
+      "reInputRate": 0.010263575055751095
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A05",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642617241,
+      "comment": "",
+      "recordingTime": 127177,
+      "recNumber": 3,
+      "timeStampStart": 88529
+    },
+    "result": {
+      "datasCount": 66,
+      "inputCharLength": 73,
+      "removedCharLength": 0,
+      "inputDataCount": 63,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 33702,
+      "typePerSec": 1.9583407512907247,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A05",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642799325,
+      "comment": "",
+      "recordingTime": 168458,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 86,
+      "inputCharLength": 88,
+      "removedCharLength": 0,
+      "inputDataCount": 82,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 59769,
+      "typePerSec": 1.4388729943616256,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A05",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642799325,
+      "comment": "",
+      "recordingTime": 168458,
+      "recNumber": 2,
+      "timeStampStart": 66800
+    },
+    "result": {
+      "datasCount": 88,
+      "inputCharLength": 89,
+      "removedCharLength": 1,
+      "inputDataCount": 83,
+      "removedDataCount": 1,
+      "missTypeRate": 0.011111111111111112,
+      "totalTime": 49892,
+      "typePerSec": 1.763809829231139,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 183,
+      "reInputRate": 0.00366792271306021
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A05",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642799325,
+      "comment": "",
+      "recordingTime": 168458,
+      "recNumber": 3,
+      "timeStampStart": 118720
+    },
+    "result": {
+      "datasCount": 86,
+      "inputCharLength": 88,
+      "removedCharLength": 0,
+      "inputDataCount": 82,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 45330,
+      "typePerSec": 1.897198323406133,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A05",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642907263,
+      "comment": "",
+      "recordingTime": 93852,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 50,
+      "inputCharLength": 49,
+      "removedCharLength": 0,
+      "inputDataCount": 47,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 28934,
+      "typePerSec": 1.7280707817792216,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A05",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642907263,
+      "comment": "",
+      "recordingTime": 93852,
+      "recNumber": 2,
+      "timeStampStart": 33141
+    },
+    "result": {
+      "datasCount": 70,
+      "inputCharLength": 59,
+      "removedCharLength": 10,
+      "inputDataCount": 57,
+      "removedDataCount": 10,
+      "missTypeRate": 0.14492753623188406,
+      "totalTime": 32526,
+      "typePerSec": 2.1521244542827276,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 7312,
+      "reInputRate": 0.2248047715673615
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "A05",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717642907263,
+      "comment": "",
+      "recordingTime": 93852,
+      "recNumber": 3,
+      "timeStampStart": 67705
+    },
+    "result": {
+      "datasCount": 50,
+      "inputCharLength": 49,
+      "removedCharLength": 0,
+      "inputDataCount": 47,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 21230,
+      "typePerSec": 2.3551577955723033,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "B01",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717490612636,
+      "comment": "",
+      "recordingTime": 183482,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 56,
+      "inputCharLength": 61,
+      "removedCharLength": 4,
+      "inputDataCount": 50,
+      "removedDataCount": 4,
+      "missTypeRate": 0.06153846153846154,
+      "totalTime": 81203,
+      "typePerSec": 0.6896296934842309,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 2228,
+      "reInputRate": 0.027437409947908328
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "B01",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717490612636,
+      "comment": "",
+      "recordingTime": 183482,
+      "recNumber": 2,
+      "timeStampStart": 86174
+    },
+    "result": {
+      "datasCount": 50,
+      "inputCharLength": 58,
+      "removedCharLength": 1,
+      "inputDataCount": 47,
+      "removedDataCount": 1,
+      "missTypeRate": 0.01694915254237288,
+      "totalTime": 42603,
+      "typePerSec": 1.1736262704504377,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 444,
+      "reInputRate": 0.010421801281599887
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "B01",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717490612636,
+      "comment": "",
+      "recordingTime": 183482,
+      "recNumber": 3,
+      "timeStampStart": 131838
+    },
+    "result": {
+      "datasCount": 52,
+      "inputCharLength": 59,
+      "removedCharLength": 2,
+      "inputDataCount": 48,
+      "removedDataCount": 2,
+      "missTypeRate": 0.03278688524590164,
+      "totalTime": 40550,
+      "typePerSec": 1.282367447595561,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 2342,
+      "reInputRate": 0.05775585696670777
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "B01",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717490857533,
+      "comment": "",
+      "recordingTime": 206839,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 70,
+      "inputCharLength": 75,
+      "removedCharLength": 2,
+      "inputDataCount": 65,
+      "removedDataCount": 2,
+      "missTypeRate": 0.025974025974025976,
+      "totalTime": 70162,
+      "typePerSec": 0.9976910578375758,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 852,
+      "reInputRate": 0.012143325446823066
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "B01",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717490857533,
+      "comment": "",
+      "recordingTime": 206839,
+      "recNumber": 2,
+      "timeStampStart": 78912
+    },
+    "result": {
+      "datasCount": 87,
+      "inputCharLength": 86,
+      "removedCharLength": 13,
+      "inputDataCount": 71,
+      "removedDataCount": 11,
+      "missTypeRate": 0.13131313131313133,
+      "totalTime": 57455,
+      "typePerSec": 1.5142285266730484,
+      "totalReInputCnt": 5,
+      "totalReInputTime": 7507,
+      "reInputRate": 0.13065877643373075
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "B01",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717490857533,
+      "comment": "",
+      "recordingTime": 206839,
+      "recNumber": 3,
+      "timeStampStart": 138815
+    },
+    "result": {
+      "datasCount": 70,
+      "inputCharLength": 76,
+      "removedCharLength": 3,
+      "inputDataCount": 65,
+      "removedDataCount": 2,
+      "missTypeRate": 0.0379746835443038,
+      "totalTime": 50580,
+      "typePerSec": 1.383946223803875,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 2297,
+      "reInputRate": 0.04541320680110716
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "B01",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717491144307,
+      "comment": "",
+      "recordingTime": 265533,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 84,
+      "inputCharLength": 86,
+      "removedCharLength": 0,
+      "inputDataCount": 80,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 89335,
+      "typePerSec": 0.9402809649073712,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "B01",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717491144307,
+      "comment": "",
+      "recordingTime": 265533,
+      "recNumber": 2,
+      "timeStampStart": 103756
+    },
+    "result": {
+      "datasCount": 86,
+      "inputCharLength": 87,
+      "removedCharLength": 1,
+      "inputDataCount": 81,
+      "removedDataCount": 1,
+      "missTypeRate": 0.011363636363636364,
+      "totalTime": 64482,
+      "typePerSec": 1.3337055302254892,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 771,
+      "reInputRate": 0.01195682516050991
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "B01",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717491144307,
+      "comment": "",
+      "recordingTime": 265533,
+      "recNumber": 3,
+      "timeStampStart": 169881
+    },
+    "result": {
+      "datasCount": 111,
+      "inputCharLength": 100,
+      "removedCharLength": 14,
+      "inputDataCount": 93,
+      "removedDataCount": 14,
+      "missTypeRate": 0.12280701754385964,
+      "totalTime": 78778,
+      "typePerSec": 1.4090228236309628,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 16669,
+      "reInputRate": 0.21159460763157226
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "B01",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717491294937,
+      "comment": "",
+      "recordingTime": 128912,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 56,
+      "inputCharLength": 52,
+      "removedCharLength": 3,
+      "inputDataCount": 50,
+      "removedDataCount": 3,
+      "missTypeRate": 0.05454545454545454,
+      "totalTime": 41719,
+      "typePerSec": 1.3423140535487428,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 711,
+      "reInputRate": 0.01704259450130636
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "B01",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717491294937,
+      "comment": "",
+      "recordingTime": 128912,
+      "recNumber": 2,
+      "timeStampStart": 46252
+    },
+    "result": {
+      "datasCount": 52,
+      "inputCharLength": 50,
+      "removedCharLength": 1,
+      "inputDataCount": 48,
+      "removedDataCount": 1,
+      "missTypeRate": 0.0196078431372549,
+      "totalTime": 33216,
+      "typePerSec": 1.5655105973025047,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 274,
+      "reInputRate": 0.008249036608863199
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "B01",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717491294937,
+      "comment": "",
+      "recordingTime": 128912,
+      "recNumber": 3,
+      "timeStampStart": 81344
+    },
+    "result": {
+      "datasCount": 49,
+      "inputCharLength": 48,
+      "removedCharLength": 0,
+      "inputDataCount": 46,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 28451,
+      "typePerSec": 1.7222593230466416,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C01",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640191126,
+      "comment": "",
+      "recordingTime": 164434,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 62,
+      "inputCharLength": 64,
+      "removedCharLength": 7,
+      "inputDataCount": 53,
+      "removedDataCount": 7,
+      "missTypeRate": 0.09859154929577464,
+      "totalTime": 69623,
+      "typePerSec": 0.8905103198655616,
+      "totalReInputCnt": 3,
+      "totalReInputTime": 8297,
+      "reInputRate": 0.11917038909555751
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C01",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640191126,
+      "comment": "",
+      "recordingTime": 164434,
+      "recNumber": 2,
+      "timeStampStart": 72797
+    },
+    "result": {
+      "datasCount": 52,
+      "inputCharLength": 59,
+      "removedCharLength": 2,
+      "inputDataCount": 48,
+      "removedDataCount": 2,
+      "missTypeRate": 0.03278688524590164,
+      "totalTime": 38372,
+      "typePerSec": 1.3551548003752736,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 967,
+      "reInputRate": 0.025200667153132492
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C01",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640191126,
+      "comment": "",
+      "recordingTime": 164434,
+      "recNumber": 3,
+      "timeStampStart": 113386
+    },
+    "result": {
+      "datasCount": 51,
+      "inputCharLength": 59,
+      "removedCharLength": 2,
+      "inputDataCount": 47,
+      "removedDataCount": 2,
+      "missTypeRate": 0.03278688524590164,
+      "totalTime": 37693,
+      "typePerSec": 1.353036372801316,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 2689,
+      "reInputRate": 0.07133950600907331
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C01",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640397310,
+      "comment": "",
+      "recordingTime": 172467,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 70,
+      "inputCharLength": 75,
+      "removedCharLength": 2,
+      "inputDataCount": 65,
+      "removedDataCount": 2,
+      "missTypeRate": 0.025974025974025976,
+      "totalTime": 62122,
+      "typePerSec": 1.1268149769807798,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 2581,
+      "reInputRate": 0.04154727793696275
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C01",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640397310,
+      "comment": "",
+      "recordingTime": 172467,
+      "recNumber": 2,
+      "timeStampStart": 76684
+    },
+    "result": {
+      "datasCount": 76,
+      "inputCharLength": 78,
+      "removedCharLength": 5,
+      "inputDataCount": 68,
+      "removedDataCount": 5,
+      "missTypeRate": 0.060240963855421686,
+      "totalTime": 46038,
+      "typePerSec": 1.6508102002693428,
+      "totalReInputCnt": 3,
+      "totalReInputTime": 3451,
+      "reInputRate": 0.07495981580433556
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C01",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640397310,
+      "comment": "",
+      "recordingTime": 172467,
+      "recNumber": 3,
+      "timeStampStart": 124032
+    },
+    "result": {
+      "datasCount": 68,
+      "inputCharLength": 74,
+      "removedCharLength": 1,
+      "inputDataCount": 64,
+      "removedDataCount": 1,
+      "missTypeRate": 0.013333333333333334,
+      "totalTime": 40290,
+      "typePerSec": 1.6877637130801688,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 326,
+      "reInputRate": 0.008091337800943161
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C01",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640633794,
+      "comment": "",
+      "recordingTime": 209483,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 92,
+      "inputCharLength": 91,
+      "removedCharLength": 3,
+      "inputDataCount": 85,
+      "removedDataCount": 3,
+      "missTypeRate": 0.031914893617021274,
+      "totalTime": 70807,
+      "typePerSec": 1.2993065657350262,
+      "totalReInputCnt": 3,
+      "totalReInputTime": 998,
+      "reInputRate": 0.014094651658734306
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C01",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640633794,
+      "comment": "",
+      "recordingTime": 209483,
+      "recNumber": 2,
+      "timeStampStart": 87011
+    },
+    "result": {
+      "datasCount": 98,
+      "inputCharLength": 94,
+      "removedCharLength": 6,
+      "inputDataCount": 88,
+      "removedDataCount": 6,
+      "missTypeRate": 0.06,
+      "totalTime": 56027,
+      "typePerSec": 1.7491566566119907,
+      "totalReInputCnt": 5,
+      "totalReInputTime": 1995,
+      "reInputRate": 0.035607831938172664
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C01",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640633794,
+      "comment": "",
+      "recordingTime": 209483,
+      "recNumber": 3,
+      "timeStampStart": 144478
+    },
+    "result": {
+      "datasCount": 104,
+      "inputCharLength": 97,
+      "removedCharLength": 9,
+      "inputDataCount": 91,
+      "removedDataCount": 9,
+      "missTypeRate": 0.08490566037735849,
+      "totalTime": 59404,
+      "typePerSec": 1.750723856979328,
+      "totalReInputCnt": 6,
+      "totalReInputTime": 4070,
+      "reInputRate": 0.0685139047875564
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C01",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640767811,
+      "comment": "",
+      "recordingTime": 120950,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 70,
+      "inputCharLength": 59,
+      "removedCharLength": 10,
+      "inputDataCount": 57,
+      "removedDataCount": 10,
+      "missTypeRate": 0.14492753623188406,
+      "totalTime": 38699,
+      "typePerSec": 1.8088322695676893,
+      "totalReInputCnt": 5,
+      "totalReInputTime": 6599,
+      "reInputRate": 0.17052120209824542
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C01",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640767811,
+      "comment": "",
+      "recordingTime": 120950,
+      "recNumber": 2,
+      "timeStampStart": 48869
+    },
+    "result": {
+      "datasCount": 54,
+      "inputCharLength": 51,
+      "removedCharLength": 2,
+      "inputDataCount": 49,
+      "removedDataCount": 2,
+      "missTypeRate": 0.03773584905660377,
+      "totalTime": 27858,
+      "typePerSec": 1.9384018953262976,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 1157,
+      "reInputRate": 0.041532055423935677
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C01",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640767811,
+      "comment": "",
+      "recordingTime": 120950,
+      "recNumber": 3,
+      "timeStampStart": 78586
+    },
+    "result": {
+      "datasCount": 61,
+      "inputCharLength": 55,
+      "removedCharLength": 6,
+      "inputDataCount": 50,
+      "removedDataCount": 6,
+      "missTypeRate": 0.09836065573770492,
+      "totalTime": 31125,
+      "typePerSec": 1.9598393574297188,
+      "totalReInputCnt": 3,
+      "totalReInputTime": 3662,
+      "reInputRate": 0.11765461847389558
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C02",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640172107,
+      "comment": "",
+      "recordingTime": 161283,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 60,
+      "inputCharLength": 65,
+      "removedCharLength": 4,
+      "inputDataCount": 54,
+      "removedDataCount": 4,
+      "missTypeRate": 0.057971014492753624,
+      "totalTime": 64010,
+      "typePerSec": 0.9373535385096078,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 2510,
+      "reInputRate": 0.03921262302765193
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C02",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640172107,
+      "comment": "",
+      "recordingTime": 161283,
+      "recNumber": 2,
+      "timeStampStart": 67489
+    },
+    "result": {
+      "datasCount": 55,
+      "inputCharLength": 61,
+      "removedCharLength": 3,
+      "inputDataCount": 50,
+      "removedDataCount": 3,
+      "missTypeRate": 0.046875,
+      "totalTime": 44462,
+      "typePerSec": 1.2370113805047005,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 1894,
+      "reInputRate": 0.042598173721380056
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C02",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640172107,
+      "comment": "",
+      "recordingTime": 161283,
+      "recNumber": 3,
+      "timeStampStart": 114800
+    },
+    "result": {
+      "datasCount": 55,
+      "inputCharLength": 63,
+      "removedCharLength": 1,
+      "inputDataCount": 52,
+      "removedDataCount": 1,
+      "missTypeRate": 0.015625,
+      "totalTime": 39997,
+      "typePerSec": 1.3751031327349552,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 118,
+      "reInputRate": 0.0029502212665949946
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C02",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640403367,
+      "comment": "",
+      "recordingTime": 207994,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 85,
+      "inputCharLength": 90,
+      "removedCharLength": 2,
+      "inputDataCount": 80,
+      "removedDataCount": 2,
+      "missTypeRate": 0.021739130434782608,
+      "totalTime": 78491,
+      "typePerSec": 1.0829267049725446,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 272,
+      "reInputRate": 0.003465365455912143
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C02",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640403367,
+      "comment": "",
+      "recordingTime": 207994,
+      "recNumber": 2,
+      "timeStampStart": 82642
+    },
+    "result": {
+      "datasCount": 95,
+      "inputCharLength": 95,
+      "removedCharLength": 7,
+      "inputDataCount": 85,
+      "removedDataCount": 7,
+      "missTypeRate": 0.06862745098039216,
+      "totalTime": 58388,
+      "typePerSec": 1.627046653421936,
+      "totalReInputCnt": 5,
+      "totalReInputTime": 3446,
+      "reInputRate": 0.05901897650202096
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C02",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640403367,
+      "comment": "",
+      "recordingTime": 207994,
+      "recNumber": 3,
+      "timeStampStart": 144912
+    },
+    "result": {
+      "datasCount": 91,
+      "inputCharLength": 93,
+      "removedCharLength": 5,
+      "inputDataCount": 83,
+      "removedDataCount": 5,
+      "missTypeRate": 0.05102040816326531,
+      "totalTime": 56916,
+      "typePerSec": 1.5988474242743693,
+      "totalReInputCnt": 3,
+      "totalReInputTime": 2002,
+      "reInputRate": 0.035174643334036124
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C02",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640812064,
+      "comment": "",
+      "recordingTime": 163333,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 83,
+      "inputCharLength": 70,
+      "removedCharLength": 13,
+      "inputDataCount": 65,
+      "removedDataCount": 13,
+      "missTypeRate": 0.1566265060240964,
+      "totalTime": 57173,
+      "typePerSec": 1.4517342102041173,
+      "totalReInputCnt": 6,
+      "totalReInputTime": 10299,
+      "reInputRate": 0.18013747748062897
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C02",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640812064,
+      "comment": "",
+      "recordingTime": 163333,
+      "recNumber": 2,
+      "timeStampStart": 59971
+    },
+    "result": {
+      "datasCount": 89,
+      "inputCharLength": 73,
+      "removedCharLength": 16,
+      "inputDataCount": 68,
+      "removedDataCount": 16,
+      "missTypeRate": 0.1797752808988764,
+      "totalTime": 51644,
+      "typePerSec": 1.7233366896444893,
+      "totalReInputCnt": 7,
+      "totalReInputTime": 7422,
+      "reInputRate": 0.1437146619161955
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C02",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640812064,
+      "comment": "",
+      "recordingTime": 163333,
+      "recNumber": 3,
+      "timeStampStart": 117949
+    },
+    "result": {
+      "datasCount": 65,
+      "inputCharLength": 60,
+      "removedCharLength": 4,
+      "inputDataCount": 58,
+      "removedDataCount": 4,
+      "missTypeRate": 0.0625,
+      "totalTime": 39581,
+      "typePerSec": 1.6422020666481392,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 2661,
+      "reInputRate": 0.0672292261438569
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D01",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718007845645,
+      "comment": "",
+      "recordingTime": 126181,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 62,
+      "inputCharLength": 63,
+      "removedCharLength": 7,
+      "inputDataCount": 54,
+      "removedDataCount": 6,
+      "missTypeRate": 0.1,
+      "totalTime": 49768,
+      "typePerSec": 1.2457804211541552,
+      "totalReInputCnt": 4,
+      "totalReInputTime": 5051,
+      "reInputRate": 0.10149091785886513
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D01",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718007845645,
+      "comment": "",
+      "recordingTime": 126181,
+      "recNumber": 2,
+      "timeStampStart": 52788
+    },
+    "result": {
+      "datasCount": 53,
+      "inputCharLength": 57,
+      "removedCharLength": 1,
+      "inputDataCount": 49,
+      "removedDataCount": 1,
+      "missTypeRate": 0.017241379310344827,
+      "totalTime": 29957,
+      "typePerSec": 1.7692025236171847,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 277,
+      "reInputRate": 0.009246586774376607
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D01",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718007845645,
+      "comment": "",
+      "recordingTime": 126181,
+      "recNumber": 3,
+      "timeStampStart": 84821
+    },
+    "result": {
+      "datasCount": 72,
+      "inputCharLength": 66,
+      "removedCharLength": 10,
+      "inputDataCount": 58,
+      "removedDataCount": 10,
+      "missTypeRate": 0.13157894736842105,
+      "totalTime": 39534,
+      "typePerSec": 1.8212171801487327,
+      "totalReInputCnt": 5,
+      "totalReInputTime": 5147,
+      "reInputRate": 0.13019173369757678
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D01",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718008017880,
+      "comment": "",
+      "recordingTime": 147371,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 107,
+      "inputCharLength": 93,
+      "removedCharLength": 15,
+      "inputDataCount": 87,
+      "removedDataCount": 15,
+      "missTypeRate": 0.1388888888888889,
+      "totalTime": 52460,
+      "typePerSec": 2.039649256576439,
+      "totalReInputCnt": 8,
+      "totalReInputTime": 5590,
+      "reInputRate": 0.10655737704918032
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D01",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718008017880,
+      "comment": "",
+      "recordingTime": 147371,
+      "recNumber": 2,
+      "timeStampStart": 56966
+    },
+    "result": {
+      "datasCount": 101,
+      "inputCharLength": 91,
+      "removedCharLength": 12,
+      "inputDataCount": 85,
+      "removedDataCount": 12,
+      "missTypeRate": 0.11650485436893204,
+      "totalTime": 46449,
+      "typePerSec": 2.1744278671230814,
+      "totalReInputCnt": 7,
+      "totalReInputTime": 5101,
+      "reInputRate": 0.1098193717841073
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D01",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718008017880,
+      "comment": "",
+      "recordingTime": 147371,
+      "recNumber": 3,
+      "timeStampStart": 105926
+    },
+    "result": {
+      "datasCount": 85,
+      "inputCharLength": 87,
+      "removedCharLength": 5,
+      "inputDataCount": 77,
+      "removedDataCount": 4,
+      "missTypeRate": 0.05434782608695652,
+      "totalTime": 38860,
+      "typePerSec": 2.1873391662377766,
+      "totalReInputCnt": 3,
+      "totalReInputTime": 1100,
+      "reInputRate": 0.028306742151312403
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D01",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718008188182,
+      "comment": "",
+      "recordingTime": 157028,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 106,
+      "inputCharLength": 100,
+      "removedCharLength": 8,
+      "inputDataCount": 94,
+      "removedDataCount": 8,
+      "missTypeRate": 0.07407407407407407,
+      "totalTime": 50796,
+      "typePerSec": 2.0867784864949996,
+      "totalReInputCnt": 6,
+      "totalReInputTime": 4093,
+      "reInputRate": 0.08057721080400032
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D01",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718008188182,
+      "comment": "",
+      "recordingTime": 157028,
+      "recNumber": 2,
+      "timeStampStart": 52797
+    },
+    "result": {
+      "datasCount": 118,
+      "inputCharLength": 107,
+      "removedCharLength": 15,
+      "inputDataCount": 100,
+      "removedDataCount": 14,
+      "missTypeRate": 0.12295081967213115,
+      "totalTime": 49411,
+      "typePerSec": 2.3881321972840057,
+      "totalReInputCnt": 10,
+      "totalReInputTime": 6497,
+      "reInputRate": 0.13148893970978123
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D01",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718008188182,
+      "comment": "",
+      "recordingTime": 157028,
+      "recNumber": 3,
+      "timeStampStart": 103559
+    },
+    "result": {
+      "datasCount": 122,
+      "inputCharLength": 108,
+      "removedCharLength": 16,
+      "inputDataCount": 102,
+      "removedDataCount": 16,
+      "missTypeRate": 0.12903225806451613,
+      "totalTime": 50986,
+      "typePerSec": 2.392813713568431,
+      "totalReInputCnt": 10,
+      "totalReInputTime": 5444,
+      "reInputRate": 0.10677440866120111
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D02",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718070555977,
+      "comment": "",
+      "recordingTime": 135686,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 56,
+      "inputCharLength": 60,
+      "removedCharLength": 4,
+      "inputDataCount": 50,
+      "removedDataCount": 4,
+      "missTypeRate": 0.0625,
+      "totalTime": 53170,
+      "typePerSec": 1.0532255031032536,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 1576,
+      "reInputRate": 0.02964077487304871
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D02",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718070555977,
+      "comment": "",
+      "recordingTime": 135686,
+      "recNumber": 2,
+      "timeStampStart": 57277
+    },
+    "result": {
+      "datasCount": 50,
+      "inputCharLength": 57,
+      "removedCharLength": 1,
+      "inputDataCount": 47,
+      "removedDataCount": 1,
+      "missTypeRate": 0.017241379310344827,
+      "totalTime": 33135,
+      "typePerSec": 1.508978421608571,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 399,
+      "reInputRate": 0.012041647804436397
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D02",
+      "title": "A",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718070555977,
+      "comment": "",
+      "recordingTime": 135686,
+      "recNumber": 3,
+      "timeStampStart": 92511
+    },
+    "result": {
+      "datasCount": 59,
+      "inputCharLength": 62,
+      "removedCharLength": 6,
+      "inputDataCount": 49,
+      "removedDataCount": 6,
+      "missTypeRate": 0.08823529411764706,
+      "totalTime": 38349,
+      "typePerSec": 1.5385016558450026,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 1403,
+      "reInputRate": 0.03658504785000913
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D02",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718070796399,
+      "comment": "",
+      "recordingTime": 183351,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 81,
+      "inputCharLength": 82,
+      "removedCharLength": 7,
+      "inputDataCount": 69,
+      "removedDataCount": 7,
+      "missTypeRate": 0.07865168539325842,
+      "totalTime": 79249,
+      "typePerSec": 1.022094916024177,
+      "totalReInputCnt": 3,
+      "totalReInputTime": 2832,
+      "reInputRate": 0.035735466693586036
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D02",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718070796399,
+      "comment": "",
+      "recordingTime": 183351,
+      "recNumber": 2,
+      "timeStampStart": 81758
+    },
+    "result": {
+      "datasCount": 68,
+      "inputCharLength": 75,
+      "removedCharLength": 0,
+      "inputDataCount": 65,
+      "removedDataCount": 0,
+      "missTypeRate": 0,
+      "totalTime": 45550,
+      "typePerSec": 1.4928649835345775,
+      "totalReInputCnt": 0,
+      "totalReInputTime": 0,
+      "reInputRate": 0
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D02",
+      "title": "B",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718070796399,
+      "comment": "",
+      "recordingTime": 183351,
+      "recNumber": 3,
+      "timeStampStart": 129655
+    },
+    "result": {
+      "datasCount": 78,
+      "inputCharLength": 80,
+      "removedCharLength": 5,
+      "inputDataCount": 70,
+      "removedDataCount": 5,
+      "missTypeRate": 0.058823529411764705,
+      "totalTime": 46621,
+      "typePerSec": 1.6730657858046802,
+      "totalReInputCnt": 5,
+      "totalReInputTime": 3928,
+      "reInputRate": 0.08425387700821518
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D02",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718071024639,
+      "comment": "",
+      "recordingTime": 208752,
+      "recNumber": 1,
+      "timeStampStart": 0
+    },
+    "result": {
+      "datasCount": 90,
+      "inputCharLength": 89,
+      "removedCharLength": 3,
+      "inputDataCount": 83,
+      "removedDataCount": 3,
+      "missTypeRate": 0.03260869565217391,
+      "totalTime": 78439,
+      "typePerSec": 1.1473884164764978,
+      "totalReInputCnt": 1,
+      "totalReInputTime": 2388,
+      "reInputRate": 0.030444039317176406
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D02",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718071024639,
+      "comment": "",
+      "recordingTime": 208752,
+      "recNumber": 2,
+      "timeStampStart": 82837
+    },
+    "result": {
+      "datasCount": 94,
+      "inputCharLength": 91,
+      "removedCharLength": 5,
+      "inputDataCount": 85,
+      "removedDataCount": 5,
+      "missTypeRate": 0.052083333333333336,
+      "totalTime": 56304,
+      "typePerSec": 1.6695083830633701,
+      "totalReInputCnt": 4,
+      "totalReInputTime": 2549,
+      "reInputRate": 0.04527209434498437
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D02",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718071024639,
+      "comment": "",
+      "recordingTime": 208752,
+      "recNumber": 3,
+      "timeStampStart": 141795
+    },
+    "result": {
+      "datasCount": 95,
+      "inputCharLength": 91,
+      "removedCharLength": 6,
+      "inputDataCount": 85,
+      "removedDataCount": 6,
+      "missTypeRate": 0.061855670103092786,
+      "totalTime": 61507,
+      "typePerSec": 1.5445396458939633,
+      "totalReInputCnt": 4,
+      "totalReInputTime": 2590,
+      "reInputRate": 0.04210902824068805
+    }
+  }
+]
