@@ -78,6 +78,8 @@ const printKeyDatas = (keyDatas) => {
   const missTypeRate = removedCout / (inputCount + removedCout);
   //分析項目：書き直した時間の割合
   const reInputRate = totalReInputTime / endTime;
+  //分析項目：平均書き直しの時間
+  const averageReInputTime = totalReInputTime / totalReInputCnt;
 
   //集計結果を返す
   const result = {
@@ -92,6 +94,7 @@ const printKeyDatas = (keyDatas) => {
     totalReInputCnt: totalReInputCnt, //書き直しの回数
     totalReInputTime: totalReInputTime, //書き直しにかかった時間
     reInputRate: Number.parseFloat(reInputRate), //書き直した時間の割合
+    averageReInputTime: averageReInputTime, //平均書き直しの時間
   };
   return result;
 };
