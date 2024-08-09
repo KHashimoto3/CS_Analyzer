@@ -41,7 +41,7 @@ function App() {
           <label htmlFor={c.name}>{c.name}</label>
         </div>
       ))}
-      <p>分析のリスト</p>
+      <h2>分析のリスト</h2>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
