@@ -9,16 +9,35 @@ import {
 } from "@mui/material";
 import data from "./result-merged.json";
 import collaborator from "./collaborator-list.json";
+import { useState } from "react";
 
 function App() {
+  const [checkedCollaborator, setCheckedCollaborator] = useState<string[]>([]);
+
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.checked) {
+      setCheckedCollaborator([...checkedCollaborator, e.target.value]);
+    } else {
+      setCheckedCollaborator(
+        checkedCollaborator.filter((name) => name !== e.target.value)
+      );
+    }
+  };
+
   return (
     <>
       <h1>Analyze-viewer</h1>
       <p>分析結果のビューア</p>
       <h2>協力者リスト</h2>
+      {checkedCollaborator}
       {collaborator.map((c) => (
         <div>
-          <input type="checkbox" id={c.name} name="collaborator" />
+          <input
+            type="checkbox"
+            value={c.name}
+            checked={checkedCollaborator.includes(c.name)}
+            onChange={handleCheckboxChange}
+          />
           <label htmlFor={c.name}>{c.name}</label>
         </div>
       ))}
