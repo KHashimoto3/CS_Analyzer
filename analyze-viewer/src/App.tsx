@@ -13,6 +13,8 @@ import { useState } from "react";
 
 function App() {
   const [checkedCollaborator, setCheckedCollaborator] = useState<string[]>([]);
+  const [checkedCollaboratorData, setCheckedCollaboratorData] =
+    useState<any>(data);
 
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.checked) {
@@ -22,6 +24,17 @@ function App() {
         checkedCollaborator.filter((name) => name !== e.target.value)
       );
     }
+  };
+
+  const filterData = () => {
+    if (checkedCollaborator.length === 0) {
+      setCheckedCollaboratorData(data);
+      return;
+    }
+    const filteredData = data.filter((d) =>
+      checkedCollaborator.includes(d.header.name)
+    );
+    setCheckedCollaboratorData(filteredData);
   };
 
   return (
@@ -41,6 +54,7 @@ function App() {
           <label htmlFor={c.name}>{c.name}</label>
         </div>
       ))}
+      <button onClick={filterData}>フィルターして表示</button>
       <h2>分析のリスト</h2>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -61,8 +75,8 @@ function App() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {data.map((row) => (
-              <TableRow key={row.header.name}>
+            {checkedCollaboratorData.map((row: any) => (
+              <TableRow>
                 <TableCell component="th" scope="row">
                   {row.header.name}
                 </TableCell>
