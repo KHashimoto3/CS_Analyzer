@@ -8,12 +8,20 @@ import {
   TableRow,
 } from "@mui/material";
 import data from "./result-merged.json";
+import collaborator from "./collaborator-list.json";
 
 function App() {
   return (
     <>
       <h1>Analyze-viewer</h1>
       <p>分析結果のビューア</p>
+      <h2>協力者リスト</h2>
+      {collaborator.map((c) => (
+        <div>
+          <input type="checkbox" id={c.name} name="collaborator" />
+          <label htmlFor={c.name}>{c.name}</label>
+        </div>
+      ))}
       <p>分析のリスト</p>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
