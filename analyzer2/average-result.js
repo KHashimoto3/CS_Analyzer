@@ -44,7 +44,7 @@ const inputDataCountSum =
 const removedDataCountSum =
   jsonData2.result.removedDataCount + jsonData3.result.removedDataCount;
 const missTypeRateSum =
-  jsonData2.result.missTypeRate + jsonData2.result.missTypeRate;
+  jsonData2.result.missTypeRate + jsonData3.result.missTypeRate;
 const totalTimeSum = jsonData2.result.totalTime + jsonData3.result.totalTime;
 const typePerSecondSum =
   jsonData2.result.typePerSec + jsonData3.result.typePerSec;
@@ -54,6 +54,8 @@ const totalReInputTimeSum =
   jsonData2.result.totalReInputTime + jsonData3.result.totalReInputTime;
 const reInputRateSum =
   jsonData2.result.reInputRate + jsonData3.result.reInputRate;
+const averageReInputTimeSum =
+  jsonData2.result.averageReInputTime + jsonData3.result.averageReInputTime;
 
 //平均値を求めて変数へ格納
 const datasCountAverage = datasCountSum / 2;
@@ -67,6 +69,7 @@ const typePerSecondAverage = typePerSecondSum / 2;
 const totalReInputCntAverage = totalReInputCntSum / 2;
 const totalReInputTimeAverage = totalReInputTimeSum / 2;
 const reInputRateAverage = reInputRateSum / 2;
+const averageReInputTimeAverage = averageReInputTimeSum / 2;
 
 //結果をオブジェクトに格納
 const outputObj = {
@@ -83,6 +86,7 @@ const outputObj = {
     totalReInputCnt: totalReInputCntAverage,
     totalReInputTime: totalReInputTimeAverage,
     reInputRate: reInputRateAverage,
+    averageReInputTime: averageReInputTimeAverage,
   },
 };
 
