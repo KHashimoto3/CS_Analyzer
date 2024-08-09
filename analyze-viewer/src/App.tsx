@@ -34,7 +34,7 @@ function App() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {data.map((row: any) => (
+            {data.map((row) => (
               <TableRow key={row.header.name}>
                 <TableCell component="th" scope="row">
                   {row.header.name}
