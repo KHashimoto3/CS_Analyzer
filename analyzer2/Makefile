@@ -23,5 +23,18 @@ process_files:
 	echo "Processed files: $$success_count"; \
 	echo "Error files: $$error_count"
 
+# 協力者名の配列
+PARTICIPANTS := A01 A02 A03 A04 A05 B01 C01 C02 D01 D02
+
+# ファイルの種類の配列
+FILE_TYPES := A B C
+average:
+	@for participant in $(PARTICIPANTS); do \
+		for filetype in $(FILE_TYPES); do \
+			echo "Running node average-result.js $$participant $$filetype"; \
+			node average-result.js $$participant $$filetype; \
+		done \
+	done
+
 # `make all` をデフォルトターゲットとして定義するための設定
 .PHONY: all process_files
