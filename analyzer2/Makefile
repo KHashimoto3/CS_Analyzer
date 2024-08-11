@@ -27,7 +27,7 @@ process_files:
 PARTICIPANTS := A01 A02 A03 A04 A05 B01 C01 C02 D01 D02
 
 # ファイルの種類の配列
-FILE_TYPES := A B C
+FILE_TYPES := A B C D
 average:
 	@for participant in $(PARTICIPANTS); do \
 		for filetype in $(FILE_TYPES); do \
