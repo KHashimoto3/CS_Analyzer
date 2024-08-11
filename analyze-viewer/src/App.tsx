@@ -7,7 +7,7 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
-import data from "./result-merged.json";
+import data from "./average-result-merged.json";
 import collaborator from "./collaborator-list.json";
 import { useState } from "react";
 
@@ -62,7 +62,6 @@ function App() {
             <TableRow>
               <TableCell>name</TableCell>
               <TableCell>title</TableCell>
-              <TableCell>recNumber</TableCell>
               <TableCell>datasCount</TableCell>
               <TableCell>inputDataCount</TableCell>
               <TableCell>removedDataCount</TableCell>
@@ -81,7 +80,6 @@ function App() {
                   {row.header.name}
                 </TableCell>
                 <TableCell>{row.header.title}</TableCell>
-                <TableCell>{row.header.recNumber}</TableCell>
                 <TableCell>{row.result.datasCount}</TableCell>
                 <TableCell>{row.result.inputDataCount}</TableCell>
                 <TableCell>{row.result.removedDataCount}</TableCell>
