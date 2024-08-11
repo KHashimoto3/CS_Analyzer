@@ -31,7 +31,7 @@ function App() {
     setAnalyzeTarget(e.target.value);
   };
 
-  const filterData = () => {
+  /*const filterData = () => {
     if (checkedCollaborator.length === 0) {
       setCheckedCollaboratorData(data);
       return;
@@ -40,6 +40,27 @@ function App() {
       checkedCollaborator.includes(d.header.name)
     );
     setCheckedCollaboratorData(filteredData);
+  };*/
+
+  //checkedCollaboratorとanalyzeTargetを使ってdataをフィルタリングする
+
+  const filterData = () => {
+    if (checkedCollaborator.length === 0) {
+      setCheckedCollaboratorData(data);
+      return;
+    }
+    const filteredData = data.filter((d) =>
+      checkedCollaborator.includes(d.header.name)
+    );
+    if (analyzeTarget === "all") {
+      setCheckedCollaboratorData(filteredData);
+    } else {
+      console.log("analyzeTargetでフィルタリング");
+      const filteredData2 = filteredData.filter(
+        (d) => d.header.title === analyzeTarget
+      );
+      setCheckedCollaboratorData(filteredData2);
+    }
   };
 
   return (
