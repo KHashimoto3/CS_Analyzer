@@ -15,6 +15,7 @@ function App() {
   const [checkedCollaborator, setCheckedCollaborator] = useState<string[]>([]);
   const [checkedCollaboratorData, setCheckedCollaboratorData] =
     useState<any>(data);
+  const [analyzeTarget, setAnalyzeTarget] = useState<string>("all");
 
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.checked) {
@@ -24,6 +25,10 @@ function App() {
         checkedCollaborator.filter((name) => name !== e.target.value)
       );
     }
+  };
+
+  const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setAnalyzeTarget(e.target.value);
   };
 
   const filterData = () => {
@@ -42,7 +47,6 @@ function App() {
       <h1>Analyze-viewer</h1>
       <p>分析結果のビューア</p>
       <h2>協力者リスト</h2>
-      {checkedCollaborator}
       {collaborator.map((c) => (
         <div>
           <input
@@ -54,6 +58,49 @@ function App() {
           <label htmlFor={c.name}>{c.name}</label>
         </div>
       ))}
+      <h2>分析対象</h2>
+      <div>
+        <input
+          type="radio"
+          name="analyzeTarget"
+          value="all"
+          checked={analyzeTarget === "all"}
+          onChange={handleRadioChange}
+        />
+        <label htmlFor="all">全体</label>
+        <input
+          type="radio"
+          name="analyzeTarget"
+          value="A"
+          checked={analyzeTarget === "A"}
+          onChange={handleRadioChange}
+        />
+        <label htmlFor="A">A</label>
+        <input
+          type="radio"
+          name="analyzeTarget"
+          value="B"
+          checked={analyzeTarget === "B"}
+          onChange={handleRadioChange}
+        />
+        <label htmlFor="B">B</label>
+        <input
+          type="radio"
+          name="analyzeTarget"
+          value="C"
+          checked={analyzeTarget === "C"}
+          onChange={handleRadioChange}
+        />
+        <label htmlFor="C">C</label>
+        <input
+          type="radio"
+          name="analyzeTarget"
+          value="D"
+          checked={analyzeTarget === "D"}
+          onChange={handleRadioChange}
+        />
+        <label htmlFor="D">D</label>
+      </div>
       <button onClick={filterData}>フィルターして表示</button>
       <h2>分析のリスト</h2>
       <TableContainer component={Paper}>
