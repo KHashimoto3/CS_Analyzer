@@ -74,17 +74,19 @@ function App() {
       <h1>Analyze-viewer</h1>
       <p>分析結果のビューア</p>
       <h2>協力者リスト</h2>
-      {collaborator.map((c) => (
-        <div>
-          <input
-            type="checkbox"
-            value={c.name}
-            checked={checkedCollaborator.includes(c.name)}
-            onChange={handleCheckboxChange}
-          />
-          <label htmlFor={c.name}>{c.name}</label>
-        </div>
-      ))}
+      <div>
+        {collaborator.map((c) => (
+          <>
+            <input
+              type="checkbox"
+              value={c.name}
+              checked={checkedCollaborator.includes(c.name)}
+              onChange={handleCheckboxChange}
+            />
+            <label htmlFor={c.name}>{c.name}</label>
+          </>
+        ))}
+      </div>
       <h2>分析対象</h2>
       <div>
         <input
