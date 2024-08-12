@@ -16,6 +16,12 @@ function App() {
   const [checkedCollaboratorData, setCheckedCollaboratorData] =
     useState<any>(data);
   const [analyzeTarget, setAnalyzeTarget] = useState<string>("all");
+  const [checkedAnalyzeClumn, setCheckedAnalyzeClumn] =
+    useState<string>("datasCount");
+
+  const handleAnalyzeClumnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCheckedAnalyzeClumn(e.target.value);
+  };
 
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.checked) {
@@ -122,23 +128,101 @@ function App() {
         />
         <label htmlFor="D">D</label>
       </div>
+      <h2>分析項目</h2>
+      <p>分析項目を選択してください</p>
+      {checkedAnalyzeClumn}
+      <div>
+        <input
+          type="radio"
+          name="analyzeClumn"
+          value="datasCount"
+          checked={checkedAnalyzeClumn.includes("datasCount")}
+          onChange={handleAnalyzeClumnChange}
+        />
+        <label htmlFor="datasCount">データ数</label>
+        <input
+          type="radio"
+          name="analyzeClumn"
+          value="inputDataCount"
+          checked={checkedAnalyzeClumn.includes("inputDataCount")}
+          onChange={handleAnalyzeClumnChange}
+        />
+        <label htmlFor="inputDataCount">入力データ数</label>
+        <input
+          type="radio"
+          name="analyzeClumn"
+          value="removedDataCount"
+          checked={checkedAnalyzeClumn.includes("removedDataCount")}
+          onChange={handleAnalyzeClumnChange}
+        />
+        <label htmlFor="removedDataCount">削除データ数</label>
+        <input
+          type="radio"
+          name="analyzeClumn"
+          value="missTypeRate"
+          checked={checkedAnalyzeClumn.includes("missTypeRate")}
+          onChange={handleAnalyzeClumnChange}
+        />
+        <label htmlFor="missTypeRate">タイプミス率</label>
+        <input
+          type="radio"
+          name="analyzeClumn"
+          value="totalTime"
+          checked={checkedAnalyzeClumn.includes("totalTime")}
+          onChange={handleAnalyzeClumnChange}
+        />
+        <label htmlFor="totalTime">合計時間</label>
+        <input
+          type="radio"
+          name="analyzeClumn"
+          value="typePerSec"
+          checked={checkedAnalyzeClumn.includes("typePerSec")}
+          onChange={handleAnalyzeClumnChange}
+        />
+        <label htmlFor="typePerSec">打鍵速度[個/秒]</label>
+        <input
+          type="radio"
+          name="analyzeClumn"
+          value="totalReInputCnt"
+          checked={checkedAnalyzeClumn.includes("totalReInputCnt")}
+          onChange={handleAnalyzeClumnChange}
+        />
+        <label htmlFor="totalReInputCnt">合計入力し直し数</label>
+        <input
+          type="radio"
+          name="analyzeClumn"
+          value="totalReInputTime"
+          checked={checkedAnalyzeClumn.includes("totalReInputTime")}
+          onChange={handleAnalyzeClumnChange}
+        />
+        <label htmlFor="totalReInputTime">合計入力し直し時間</label>
+        <input
+          type="radio"
+          name="analyzeClumn"
+          value="reInputRate"
+          checked={checkedAnalyzeClumn.includes("reInputRate")}
+          onChange={handleAnalyzeClumnChange}
+        />
+        <label htmlFor="reInputRate">入力し直し率</label>
+      </div>
       <button onClick={filterData}>フィルターして表示</button>
       <h2>分析のリスト</h2>
+
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>name</TableCell>
-              <TableCell>title</TableCell>
-              <TableCell>datasCount</TableCell>
-              <TableCell>inputDataCount</TableCell>
-              <TableCell>removedDataCount</TableCell>
-              <TableCell>missTypeRate</TableCell>
-              <TableCell>totalTime</TableCell>
-              <TableCell>typePerSec</TableCell>
-              <TableCell>totalReInputCnt</TableCell>
-              <TableCell>totalReInputTime</TableCell>
-              <TableCell>reInputRate</TableCell>
+              <TableCell>名前</TableCell>
+              <TableCell>タイトル</TableCell>
+              <TableCell>データ数</TableCell>
+              <TableCell>入力データ数</TableCell>
+              <TableCell>削除データ数</TableCell>
+              <TableCell>タイプミス率</TableCell>
+              <TableCell>合計時間</TableCell>
+              <TableCell>打鍵速度[個/秒]</TableCell>
+              <TableCell>合計入力し直し数</TableCell>
+              <TableCell>合計入力し直し時間</TableCell>
+              <TableCell>入力し直し率</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
