@@ -88,19 +88,6 @@ function App() {
     setAnalyzeTarget(e.target.value);
   };
 
-  /*const filterData = () => {
-    if (checkedCollaborator.length === 0) {
-      setCheckedCollaboratorData(data);
-      return;
-    }
-    const filteredData = data.filter((d) =>
-      checkedCollaborator.includes(d.header.name)
-    );
-    setCheckedCollaboratorData(filteredData);
-  };*/
-
-  //checkedCollaboratorとanalyzeTargetを使ってdataをフィルタリングする
-
   const filterData = () => {
     if (checkedCollaborator.length === 0) {
       setCheckedCollaboratorData(data);
@@ -124,7 +111,8 @@ function App() {
     <>
       <h1>Analyze-viewer</h1>
       <p>分析結果のビューア</p>
-      <h2>協力者リスト</h2>
+      <h2>分析結果をリスト表示</h2>
+      <p>協力者の選択</p>
       <div>
         {collaborator.map((c) => (
           <>
@@ -138,7 +126,7 @@ function App() {
           </>
         ))}
       </div>
-      <h2>分析対象</h2>
+      <p>分析対象（問題）の選択</p>
       <div>
         <input
           type="radio"
