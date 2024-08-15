@@ -10,6 +10,16 @@ import {
 import data from "./average-result-merged.json";
 import collaborator from "./collaborator-list.json";
 import { useState } from "react";
+import { BarChart } from "./components/BarChart";
+
+interface BarChartData {
+  labels: string[];
+  datasets: {
+    label: string;
+    data: number[];
+    backgroundColor: string;
+  }[];
+}
 
 function App() {
   const [checkedCollaborator, setCheckedCollaborator] = useState<string[]>([]);
@@ -18,6 +28,36 @@ function App() {
   const [analyzeTarget, setAnalyzeTarget] = useState<string>("all");
   const [checkedAnalyzeClumn, setCheckedAnalyzeClumn] =
     useState<string>("datasCount");
+
+  //棒グラフのデータ
+  const [barChartData, setBarChartData] = useState<BarChartData>({
+    labels: [],
+    datasets: [],
+  });
+
+  //棒グラフのデータを更新する関数
+  //分析対象、分析項目、協力者リストを使ってデータをフィルタリングして、barChartDataを更新する
+  const updateBarChartData = () => {
+    const labels = checkedCollaborator;
+    const datasets: number[] = [];
+
+    checkedCollaboratorData.map((d: any) => {
+      datasets.push(d.result[checkedAnalyzeClumn]);
+    });
+
+    const barChartDataObj = {
+      labels,
+      datasets: [
+        {
+          label: checkedAnalyzeClumn,
+          data: datasets,
+          backgroundColor: "rgba(255, 99, 132, 0.2)",
+        },
+      ],
+    };
+
+    setBarChartData(barChartDataObj);
+  };
 
   const handleAnalyzeClumnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCheckedAnalyzeClumn(e.target.value);
@@ -132,7 +172,6 @@ function App() {
       </div>
       <h2>分析項目</h2>
       <p>分析項目を選択してください</p>
-      {checkedAnalyzeClumn}
       <div>
         <input
           type="radio"
@@ -208,6 +247,7 @@ function App() {
         <label htmlFor="reInputRate">入力し直し率</label>
       </div>
       <button onClick={filterData}>フィルターして表示</button>
+      <button onClick={updateBarChartData}>グラフの描画</button>
       <h2>分析のリスト</h2>
 
       <TableContainer component={Paper}>
@@ -254,6 +294,12 @@ function App() {
           </TableBody>
         </Table>
       </TableContainer>
+      <h2>グラフ</h2>
+      <BarChart
+        titleText="サンプル棒グラフ"
+        labels={barChartData.labels}
+        datasets={barChartData.datasets}
+      />
     </>
   );
 }
