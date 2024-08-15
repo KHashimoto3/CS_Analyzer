@@ -9,6 +9,8 @@ import {
 } from "@mui/material";
 import data from "./average-result-merged.json";
 import collaborator from "./collaborator-list.json";
+import analyzeClumnList from "./analyze-list.json";
+
 import { useState } from "react";
 import { BarChart } from "./components/BarChart";
 
@@ -49,7 +51,7 @@ function App() {
       labels,
       datasets: [
         {
-          label: checkedAnalyzeClumn,
+          label: getLabelJa(checkedAnalyzeClumn),
           data: datasets,
           backgroundColor: "rgba(255, 99, 132, 0.2)",
         },
@@ -57,6 +59,15 @@ function App() {
     };
 
     setBarChartData(barChartDataObj);
+  };
+
+  //ラベルを英語名から日本語名に変換する関数
+  const getLabelJa = (label: string) => {
+    const target = analyzeClumnList.find((c) => c.label === label);
+    if (target) {
+      return target.labelJa;
+    }
+    return label;
   };
 
   const handleAnalyzeClumnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -173,78 +184,18 @@ function App() {
       <h2>分析項目</h2>
       <p>分析項目を選択してください</p>
       <div>
-        <input
-          type="radio"
-          name="analyzeClumn"
-          value="datasCount"
-          checked={checkedAnalyzeClumn.includes("datasCount")}
-          onChange={handleAnalyzeClumnChange}
-        />
-        <label htmlFor="datasCount">データ数</label>
-        <input
-          type="radio"
-          name="analyzeClumn"
-          value="inputDataCount"
-          checked={checkedAnalyzeClumn.includes("inputDataCount")}
-          onChange={handleAnalyzeClumnChange}
-        />
-        <label htmlFor="inputDataCount">入力データ数</label>
-        <input
-          type="radio"
-          name="analyzeClumn"
-          value="removedDataCount"
-          checked={checkedAnalyzeClumn.includes("removedDataCount")}
-          onChange={handleAnalyzeClumnChange}
-        />
-        <label htmlFor="removedDataCount">削除データ数</label>
-        <input
-          type="radio"
-          name="analyzeClumn"
-          value="missTypeRate"
-          checked={checkedAnalyzeClumn.includes("missTypeRate")}
-          onChange={handleAnalyzeClumnChange}
-        />
-        <label htmlFor="missTypeRate">タイプミス率</label>
-        <input
-          type="radio"
-          name="analyzeClumn"
-          value="totalTime"
-          checked={checkedAnalyzeClumn.includes("totalTime")}
-          onChange={handleAnalyzeClumnChange}
-        />
-        <label htmlFor="totalTime">合計時間</label>
-        <input
-          type="radio"
-          name="analyzeClumn"
-          value="typePerSec"
-          checked={checkedAnalyzeClumn.includes("typePerSec")}
-          onChange={handleAnalyzeClumnChange}
-        />
-        <label htmlFor="typePerSec">打鍵速度[個/秒]</label>
-        <input
-          type="radio"
-          name="analyzeClumn"
-          value="totalReInputCnt"
-          checked={checkedAnalyzeClumn.includes("totalReInputCnt")}
-          onChange={handleAnalyzeClumnChange}
-        />
-        <label htmlFor="totalReInputCnt">合計入力し直し数</label>
-        <input
-          type="radio"
-          name="analyzeClumn"
-          value="totalReInputTime"
-          checked={checkedAnalyzeClumn.includes("totalReInputTime")}
-          onChange={handleAnalyzeClumnChange}
-        />
-        <label htmlFor="totalReInputTime">合計入力し直し時間</label>
-        <input
-          type="radio"
-          name="analyzeClumn"
-          value="reInputRate"
-          checked={checkedAnalyzeClumn.includes("reInputRate")}
-          onChange={handleAnalyzeClumnChange}
-        />
-        <label htmlFor="reInputRate">入力し直し率</label>
+        {analyzeClumnList.map((c) => (
+          <>
+            <input
+              type="radio"
+              name="analyzeClumn"
+              value={c.label}
+              checked={checkedAnalyzeClumn.includes(c.label)}
+              onChange={handleAnalyzeClumnChange}
+            />
+            <label htmlFor={c.label}>{c.labelJa}</label>
+          </>
+        ))}
       </div>
       <button onClick={filterData}>フィルターして表示</button>
       <button onClick={updateBarChartData}>グラフの描画</button>

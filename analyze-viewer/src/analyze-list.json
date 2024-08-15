@@ -1,0 +1,38 @@
+[
+  {
+    "label": "datasCount",
+    "labelJa": "データ数"
+  },
+  {
+    "label": "inputDataCount",
+    "labelJa": "入力データ数"
+  },
+  {
+    "label": "removedDataCount",
+    "labelJa": "削除データ数"
+  },
+  {
+    "label": "missTypeRate",
+    "labelJa": "ミスタイプ率"
+  },
+  {
+    "label": "totalTime",
+    "labelJa": "合計時間"
+  },
+  {
+    "label": "typePerSec",
+    "labelJa": "打鍵速度[個/秒]"
+  },
+  {
+    "label": "totalReInputCnt",
+    "labelJa": "合計入力し直し数"
+  },
+  {
+    "label": "totalReInputTime",
+    "labelJa": "合計入力し直し時間"
+  },
+  {
+    "label": "reInputRate",
+    "labelJa": "入力し直し率"
+  }
+]
