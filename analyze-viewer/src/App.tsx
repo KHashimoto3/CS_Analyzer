@@ -181,8 +181,9 @@ function App() {
         />
         <label htmlFor="D">D</label>
       </div>
-      <h2>分析項目</h2>
-      <p>分析項目を選択してください</p>
+      <button onClick={filterData}>フィルターして表示</button>
+      <h2>グラフに抽出</h2>
+      <p>グラフに抽出する分析項目を選択してください</p>
       <div>
         {analyzeClumnList.map((c) => (
           <>
@@ -197,9 +198,8 @@ function App() {
           </>
         ))}
       </div>
-      <button onClick={filterData}>フィルターして表示</button>
       <button onClick={updateBarChartData}>グラフの描画</button>
-      <h2>分析のリスト</h2>
+      <h2>分析結果のリスト</h2>
 
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
