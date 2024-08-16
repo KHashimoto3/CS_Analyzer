@@ -171,7 +171,10 @@ function App() {
       </div>
       <button onClick={filterData}>フィルターして表示</button>
       <h2>グラフに抽出</h2>
-      <p>グラフに抽出する分析項目を選択してください</p>
+      <p>グラフに抽出する分析項目を選択してください。</p>
+      <p style={{ color: "red" }}>
+        先に、協力者と分析対象を選択してから選択してください。
+      </p>
       <div>
         {analyzeClumnList.map((c) => (
           <>
