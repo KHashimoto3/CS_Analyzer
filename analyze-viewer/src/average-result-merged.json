@@ -903,6 +903,36 @@
     "header": {
       "userId": -1,
       "name": "C02",
+      "title": "C",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1717640630841,
+      "comment": "",
+      "recordingTime": 214565,
+      "recNumber": 2,
+      "timeStampStart": 83335
+    },
+    "result": {
+      "datasCount": 94,
+      "inputCharLength": 94,
+      "removedCharLength": 2,
+      "inputDataCount": 88,
+      "removedDataCount": 2,
+      "missTypeRate": 0.020833333333333332,
+      "totalTime": 59927.5,
+      "typePerSec": 1.5698923427769254,
+      "totalReInputCnt": 2,
+      "totalReInputTime": 928,
+      "reInputRate": 0.015491705280105222,
+      "averageReInputTime": 464
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "C02",
       "title": "D",
       "language": {
         "tag": "text/x-csrc",
@@ -1022,6 +1052,36 @@
   {
     "header": {
       "userId": -1,
+      "name": "D01",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718008311751,
+      "comment": "",
+      "recordingTime": 97999,
+      "recNumber": 2,
+      "timeStampStart": 38628
+    },
+    "result": {
+      "datasCount": 72,
+      "inputCharLength": 64,
+      "removedCharLength": 7,
+      "inputDataCount": 61,
+      "removedDataCount": 6,
+      "missTypeRate": 0.09731343283582089,
+      "totalTime": 27531,
+      "typePerSec": 2.6145977897767745,
+      "totalReInputCnt": 4,
+      "totalReInputTime": 3129.5,
+      "reInputRate": 0.1130420469491176,
+      "averageReInputTime": 959.9166666666667
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
       "name": "D02",
       "title": "A",
       "language": {
@@ -1107,6 +1167,36 @@
       "totalReInputTime": 2569.5,
       "reInputRate": 0.043690561292836216,
       "averageReInputTime": 642.375
+    }
+  },
+  {
+    "header": {
+      "userId": -1,
+      "name": "D02",
+      "title": "D",
+      "language": {
+        "tag": "text/x-csrc",
+        "name": "C言語"
+      },
+      "uploadTime": 1718071167206,
+      "comment": "",
+      "recordingTime": 115267,
+      "recNumber": 2,
+      "timeStampStart": 48203
+    },
+    "result": {
+      "datasCount": 60,
+      "inputCharLength": 57,
+      "removedCharLength": 2,
+      "inputDataCount": 55,
+      "removedDataCount": 2,
+      "missTypeRate": 0.03389830508474576,
+      "totalTime": 30445.5,
+      "typePerSec": 2.001563777787981,
+      "totalReInputCnt": 1.5,
+      "totalReInputTime": 577.5,
+      "reInputRate": 0.018153425124612307,
+      "averageReInputTime": 500.25
     }
   }
 ]
