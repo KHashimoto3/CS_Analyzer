@@ -79,30 +79,6 @@ export const AnalyzeScatter = () => {
     setScatterData(scatterDataObj);
   };
 
-  //棒グラフのデータを更新する関数
-  //分析対象、分析項目、協力者リストを使ってデータをフィルタリングして、barChartDataを更新する
-  /*const updateBarChartData = () => {
-    const labels = checkedCollaborator;
-    const datasets: number[] = [];
-
-    checkedCollaboratorData.map((d: any) => {
-      datasets.push(d.result[checkedAnalyzeClumn]);
-    });
-
-    const barChartDataObj = {
-      labels,
-      datasets: [
-        {
-          label: getLabelJa(checkedAnalyzeClumn),
-          data: datasets,
-          backgroundColor: "rgba(255, 99, 132, 0.2)",
-        },
-      ],
-    };
-
-    setBarChartData(barChartDataObj);
-  };*/
-
   //ラベルを英語名から日本語名に変換する関数
   const getLabelJa = (label: string) => {
     const target = analyzeClumnList.find((c) => c.label === label);
