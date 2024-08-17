@@ -34,12 +34,6 @@ export const AnalyzeScatter = () => {
   const [analyzeTarget, setAnalyzeTarget] = useState<string>("all");
   const [checkedAnalyzeClumn, setCheckedAnalyzeClumn] = useState<string[]>([]);
 
-  //棒グラフのデータ
-  /*const [barChartData, setBarChartData] = useState<BarChartData>({
-    labels: [],
-    datasets: [],
-  });*/
-
   //散布図のデータ
   const [scatterData, setScatterData] = useState<ScatterData>({
     label: "",
