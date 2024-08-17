@@ -7,18 +7,22 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
+
 import data from "./average-result-merged.json";
 import collaborator from "./collaborator-list.json";
 import analyzeClumnList from "./analyze-list.json";
 
 import { useState } from "react";
-import { BarChart } from "../components/BarChart";
+import { ScatterChart } from "../components/ScatterChart";
 
-interface BarChartData {
-  labels: string[];
+interface ScatterData {
+  label: string;
   datasets: {
     label: string;
-    data: number[];
+    data: {
+      x: number;
+      y: number;
+    }[];
     backgroundColor: string;
   }[];
 }
@@ -28,18 +32,56 @@ export const AnalyzeScatter = () => {
   const [checkedCollaboratorData, setCheckedCollaboratorData] =
     useState<any>(data);
   const [analyzeTarget, setAnalyzeTarget] = useState<string>("all");
-  const [checkedAnalyzeClumn, setCheckedAnalyzeClumn] =
-    useState<string>("datasCount");
+  const [checkedAnalyzeClumn, setCheckedAnalyzeClumn] = useState<string[]>([]);
 
   //棒グラフのデータ
-  const [barChartData, setBarChartData] = useState<BarChartData>({
+  /*const [barChartData, setBarChartData] = useState<BarChartData>({
     labels: [],
+    datasets: [],
+  });*/
+
+  //散布図のデータ
+  const [scatterData, setScatterData] = useState<ScatterData>({
+    label: "",
     datasets: [],
   });
 
+  const updateScatterData = () => {
+    if (checkedAnalyzeClumn.length < 2) {
+      alert("分析項目を2つ以上選択してください");
+      return;
+    }
+
+    const label = `${getLabelJa(checkedAnalyzeClumn[0])} vs ${getLabelJa(
+      checkedAnalyzeClumn[1]
+    )}`;
+    const data: any = [];
+
+    checkedCollaboratorData.map((d: any) => {
+      const pointData = {
+        x: d.result[checkedAnalyzeClumn[0]],
+        y: d.result[checkedAnalyzeClumn[1]],
+      };
+      data.push(pointData);
+    });
+
+    const scatterDataObj: ScatterData = {
+      label,
+      datasets: [
+        {
+          label,
+          data,
+          backgroundColor: "rgba(255, 0, 0, 1.0)",
+        },
+      ],
+    };
+
+    setScatterData(scatterDataObj);
+  };
+
   //棒グラフのデータを更新する関数
   //分析対象、分析項目、協力者リストを使ってデータをフィルタリングして、barChartDataを更新する
-  const updateBarChartData = () => {
+  /*const updateBarChartData = () => {
     const labels = checkedCollaborator;
     const datasets: number[] = [];
 
@@ -59,7 +101,7 @@ export const AnalyzeScatter = () => {
     };
 
     setBarChartData(barChartDataObj);
-  };
+  };*/
 
   //ラベルを英語名から日本語名に変換する関数
   const getLabelJa = (label: string) => {
@@ -70,10 +112,18 @@ export const AnalyzeScatter = () => {
     return label;
   };
 
+  //分析する項目のチェックボックスが変更されたときの処理
   const handleAnalyzeClumnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setCheckedAnalyzeClumn(e.target.value);
+    if (e.target.checked) {
+      setCheckedAnalyzeClumn([...checkedAnalyzeClumn, e.target.value]);
+    } else {
+      setCheckedAnalyzeClumn(
+        checkedAnalyzeClumn.filter((name) => name !== e.target.value)
+      );
+    }
   };
 
+  //協力者のチェックボックスが変更されたときの処理
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.checked) {
       setCheckedCollaborator([...checkedCollaborator, e.target.value]);
@@ -84,6 +134,7 @@ export const AnalyzeScatter = () => {
     }
   };
 
+  //分析対象のラジオボタンが変更されたときの処理
   const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setAnalyzeTarget(e.target.value);
   };
@@ -177,8 +228,7 @@ export const AnalyzeScatter = () => {
         {analyzeClumnList.map((c) => (
           <>
             <input
-              type="radio"
-              name="analyzeClumn"
+              type="checkbox"
               value={c.label}
               checked={checkedAnalyzeClumn.includes(c.label)}
               onChange={handleAnalyzeClumnChange}
@@ -187,7 +237,7 @@ export const AnalyzeScatter = () => {
           </>
         ))}
       </div>
-      <button onClick={updateBarChartData}>グラフの描画</button>
+      <button onClick={updateScatterData}>グラフの描画</button>
       <h2>分析結果のリスト</h2>
 
       <TableContainer component={Paper}>
@@ -235,11 +285,7 @@ export const AnalyzeScatter = () => {
         </Table>
       </TableContainer>
       <h2>グラフ</h2>
-      <BarChart
-        titleText="サンプル棒グラフ"
-        labels={barChartData.labels}
-        datasets={barChartData.datasets}
-      />
+      <ScatterChart label="散布図" datasets={scatterData.datasets} />
     </>
   );
 };
