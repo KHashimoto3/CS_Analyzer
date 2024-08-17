@@ -46,6 +46,11 @@ export const AnalyzeScatter = () => {
       return;
     }
 
+    if (checkedAnalyzeClumn.length > 2) {
+      alert("分析項目を2つまでで選択してください");
+      return;
+    }
+
     const label = `${getLabelJa(checkedAnalyzeClumn[0])} vs ${getLabelJa(
       checkedAnalyzeClumn[1]
     )}`;
