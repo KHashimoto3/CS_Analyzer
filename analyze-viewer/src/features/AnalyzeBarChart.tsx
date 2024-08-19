@@ -240,7 +240,7 @@ export const AnalyzeBarChart = () => {
       </TableContainer>
       <h2>グラフ</h2>
       <BarChart
-        titleText="サンプル棒グラフ"
+        titleText={getLabelJa(checkedAnalyzeClumn)}
         labels={barChartData.labels}
         datasets={barChartData.datasets}
       />
