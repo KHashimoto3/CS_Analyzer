@@ -34,5 +34,9 @@
   {
     "label": "reInputRate",
     "labelJa": "入力し直し率"
+  },
+  {
+    "label": "averageReInputTime",
+    "labelJa": "平均入力し直し時間"
   }
 ]

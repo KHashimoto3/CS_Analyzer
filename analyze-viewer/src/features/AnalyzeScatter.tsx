@@ -230,6 +230,7 @@ export const AnalyzeScatter = () => {
               <TableCell>合計入力し直し数</TableCell>
               <TableCell>合計入力し直し時間</TableCell>
               <TableCell>入力し直し率</TableCell>
+              <TableCell>平均入力し直し時間</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -253,6 +254,9 @@ export const AnalyzeScatter = () => {
                 <TableCell>{row.result.totalReInputTime}</TableCell>
                 <TableCell>
                   {parseFloat(row.result.reInputRate.toFixed(3))}
+                </TableCell>
+                <TableCell>
+                  {parseFloat(row.result.averageReInputTime.toFixed(3))}
                 </TableCell>
               </TableRow>
             ))}
