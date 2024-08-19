@@ -1,32 +1,42 @@
 [
   {
-    "name": "A01"
+    "name": "A01",
+    "level": "beginner"
   },
   {
-    "name": "A02"
+    "name": "A02",
+    "level": "expert"
   },
   {
-    "name": "A03"
+    "name": "A03",
+    "level": "beginner"
   },
   {
-    "name": "A04"
+    "name": "A04",
+    "level": "expert"
   },
   {
-    "name": "A05"
+    "name": "A05",
+    "level": "beginner"
   },
   {
-    "name": "B01"
+    "name": "B01",
+    "level": "beginner"
   },
   {
-    "name": "C01"
+    "name": "C01",
+    "level": "beginner"
   },
   {
-    "name": "C02"
+    "name": "C02",
+    "level": "beginner"
   },
   {
-    "name": "D01"
+    "name": "D01",
+    "level": "expert"
   },
   {
-    "name": "D02"
+    "name": "D02",
+    "level": "beginner"
   }
 ]

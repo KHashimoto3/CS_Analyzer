@@ -54,23 +54,48 @@ export const AnalyzeScatter = () => {
     const label = `${getLabelJa(checkedAnalyzeClumn[0])} vs ${getLabelJa(
       checkedAnalyzeClumn[1]
     )}`;
-    const data: any = [];
+    //const data: any = [];
+
+    const expertData: any = [];
+    const beginnerData: any = [];
 
     checkedCollaboratorData.map((d: any) => {
-      const pointData = {
-        x: d.result[checkedAnalyzeClumn[0]],
-        y: d.result[checkedAnalyzeClumn[1]],
-      };
-      data.push(pointData);
+      if (isExpert(d.header.name)) {
+        expertData.push({
+          x: d.result[checkedAnalyzeClumn[0]],
+          y: d.result[checkedAnalyzeClumn[1]],
+        });
+      } else {
+        beginnerData.push({
+          x: d.result[checkedAnalyzeClumn[0]],
+          y: d.result[checkedAnalyzeClumn[1]],
+        });
+      }
     });
 
-    const scatterDataObj: ScatterData = {
+    /*const scatterDataObj: ScatterData = {
       label,
       datasets: [
         {
           label,
           data,
           backgroundColor: "rgba(255, 0, 0, 1.0)",
+        },
+      ],
+    };*/
+
+    const scatterDataObj: ScatterData = {
+      label,
+      datasets: [
+        {
+          label: "expert",
+          data: expertData,
+          backgroundColor: "rgba(255, 0, 0, 1.0)",
+        },
+        {
+          label: "beginner",
+          data: beginnerData,
+          backgroundColor: "rgba(0, 0, 255, 1.0)",
         },
       ],
     };
@@ -85,6 +110,15 @@ export const AnalyzeScatter = () => {
       return target.labelJa;
     }
     return label;
+  };
+
+  //協力者が熟練者かどうかを判定する関数
+  const isExpert = (name: string) => {
+    if (collaborator.find((c) => c.name === name)?.level === "expert") {
+      return true;
+    } else {
+      return false;
+    }
   };
 
   //分析する項目のチェックボックスが変更されたときの処理
