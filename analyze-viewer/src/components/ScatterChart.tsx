@@ -29,8 +29,6 @@ export const ScatterChart = (props: Props) => {
   const options = {
     scales: {
       x: {
-        type: "linear",
-        position: "bottom",
         beginAtZero: true,
       },
       y: {
@@ -44,7 +42,12 @@ export const ScatterChart = (props: Props) => {
       <h2>散布図</h2>
       <p>散布図を表示する</p>
       <div style={{ width: 600, height: 400 }}>
-        <Scatter data={{ datasets }} width={600} height={400} />
+        <Scatter
+          options={options}
+          data={{ datasets }}
+          width={600}
+          height={400}
+        />
       </div>
     </div>
   );
