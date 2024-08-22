@@ -88,12 +88,12 @@ export const AnalyzeScatter = () => {
       label,
       datasets: [
         {
-          label: "expert",
+          label: "熟練者",
           data: expertData,
           backgroundColor: "rgba(255, 0, 0, 1.0)",
         },
         {
-          label: "beginner",
+          label: "初心者",
           data: beginnerData,
           backgroundColor: "rgba(0, 0, 255, 1.0)",
         },
