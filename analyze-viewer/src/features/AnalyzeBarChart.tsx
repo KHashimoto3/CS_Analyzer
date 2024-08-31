@@ -43,9 +43,18 @@ export const AnalyzeBarChart = () => {
     const labels = checkedCollaborator;
     const datasets: number[] = [];
 
-    checkedCollaboratorData.map((d: any) => {
-      datasets.push(d.result[checkedAnalyzeClumn]);
+    //checkedCollaboratorの各要素に対応するデータを取得
+    console.log(checkedCollaborator);
+
+    checkedCollaborator.map((name) => {
+      const d = getCollaboratorData(name);
+      if (d) {
+        //datasets.push(d.result[checkedAnalyzeClumn]);
+        datasets.push(Number(d.result[checkedAnalyzeClumn]));
+      }
     });
+
+    console.log(datasets);
 
     const barChartDataObj = {
       labels,
@@ -59,6 +68,11 @@ export const AnalyzeBarChart = () => {
     };
 
     setBarChartData(barChartDataObj);
+  };
+
+  //渡された協力者に対応するデータを取得する関数
+  const getCollaboratorData = (name: string) => {
+    return checkedCollaboratorData.find((d) => d.header.name === name);
   };
 
   //ラベルを英語名から日本語名に変換する関数
